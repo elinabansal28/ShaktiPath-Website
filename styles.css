@@ -1,0 +1,79 @@
+/* Global Font Import - kept in HTML for preconnect performance */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ecfeff; /* brand-surface (Cyan-50) */
+  color: #374151; /* gray-700 - softer than black */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar - Soft Cyan */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ecfeff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a5f3fc; /* Cyan-200 */
+  border-radius: 5px;
+  border: 2px solid #ecfeff; /* Creates padding effect */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #22d3ee; /* brand-magentaLight (Cyan-400) */
+}
+
+/* Hero Carousel Animations */
+.hero-slide-enter {
+  opacity: 0;
+  transform: scale(1.02); /* Reduced movement for calmness */
+}
+
+.hero-slide-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 1200ms ease-in-out, transform 4000ms ease-out;
+}
+
+.hero-slide-exit {
+  opacity: 1;
+}
+
+.hero-slide-exit-active {
+  opacity: 0;
+  transition: opacity 1200ms ease-in-out;
+}
+
+/* General Utility Animations */
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Soft Selection */
+::selection {
+  background-color: #c4b5fd; /* Violet-300 */
+  color: #4c1d95; /* Violet-900 */
+}

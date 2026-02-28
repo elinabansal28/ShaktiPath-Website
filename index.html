@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShaktiPath | From Potential to Power</title>
+    <meta name="description" content="ShaktiPath empowers underserved girls in India through practical digital skills, AI literacy, and mentorship." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                // Backgrounds
+                surface: '#ecfeff',      // Cyan-50: Very pale calming cyan
+                surfaceAlt: '#f0fdfa',   // Teal-50: Very pale calming mint
+                
+                // Primary Brand (Vibrant Cyan)
+                magenta: '#06b6d4',      // Cyan-500: More vibrant
+                magentaDark: '#0e7490',  // Cyan-700: Deep but not too dark
+                magentaLight: '#22d3ee', // Cyan-400: Bright Cyan
+                
+                // Supporting Colors
+                teal: '#00e5ff',         // Vibrant Cyan from screenshot
+                rose: '#fb7185',         // Rose-400: Soft warmth/care
+                yellow: '#fbbf24',       // Amber-400: Better contrast than 300
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <script type="importmap">
+{
+  "imports": {
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.564.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-brand-surface text-gray-700 antialiased selection:bg-brand-magentaLight selection:text-white">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
