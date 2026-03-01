@@ -39,8 +39,9 @@ const Home: React.FC = () => {
             {/* Hero Content Overlay (Now specific to each slide) */}
             <div className="absolute inset-0 container mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center">
                 <div className="max-w-3xl space-y-8 animate-fade-in-up">
-                  <h1 className="text-4xl lg:text-6xl font-bold text-brand-yellow leading-[1.1] tracking-tight drop-shadow-sm" 
-                      dangerouslySetInnerHTML={{ __html: slide.title }}>
+                  <h1 className="text-4xl lg:text-6xl font-bold leading-[1.1] tracking-tight drop-shadow-sm">
+                    <span className="text-white">{slide.titleWhite}</span>
+                    <span className="text-brand-yellow">{slide.titleAccent}</span>
                   </h1>
                   <p className="text-3xl text-white max-w-lg leading-relaxed font-medium drop-shadow-md">
                     {slide.description}

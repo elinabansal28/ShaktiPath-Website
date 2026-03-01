@@ -9,6 +9,8 @@ import About from './pages/About';
 import GetInvolved from './pages/GetInvolved';
 import WhyShaktiPath from './pages/WhyShaktiPath';
 import Impact from './pages/Impact';
+import Privacy from './pages/Privacy';
+import Terms from './pages/Terms';
 
 const App: React.FC = () => {
   return (
@@ -25,6 +27,8 @@ const App: React.FC = () => {
           <Route path="/get-involved" element={<GetInvolved />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/impact" element={<Impact />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
           {/* Fallback routes */}
           <Route path="/stories" element={<Navigate to="/" replace />} />
           <Route path="*" element={<Navigate to="/" replace />} />

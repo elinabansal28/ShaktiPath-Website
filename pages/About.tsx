@@ -31,10 +31,10 @@ const About: React.FC = () => {
          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-center mb-12">Meet the Founder</h2>
             <div className="flex flex-col md:flex-row items-center gap-12 max-w-5xl mx-auto">
-               {/* Photo Placeholder */}
+               {/* Founder Avatar */}
                <div className="w-full md:w-1/3 flex justify-center md:justify-end">
-                  <div className="w-64 h-64 bg-gray-200 rounded-2xl flex items-center justify-center text-gray-400 shadow-inner">
-                     <span className="text-sm font-medium">Photo Placeholder</span>
+                  <div className="w-64 h-64 bg-gradient-to-br from-brand-magenta to-brand-magentaDark rounded-2xl flex items-center justify-center shadow-xl">
+                     <span className="text-7xl font-bold text-white select-none">EB</span>
                   </div>
                </div>
                

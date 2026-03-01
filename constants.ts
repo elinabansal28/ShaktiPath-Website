@@ -1,21 +1,23 @@
 export const IMAGES = {
   // Hero Carousel Images (3 images as requested)
-  // Converted to objects to support unique text per slide
+  // titleWhite = first part rendered in white, titleAccent = second part rendered in brand-yellow
   HOME_HERO: [
     {
-      // Restoring the specific image of girls with smartphone from the first request
       image: "https://images.unsplash.com/photo-1577896335608-29bd2a839356?q=80&w=1600&auto=format&fit=crop",
-      title: "<span class='text-white'>A Move</span> beyond textbooks",
+      titleWhite: "A Move",
+      titleAccent: " beyond textbooks",
       description: "Empowering high school girls with marketable Digital / AI skills at an early age."
     },
     {
-      image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80", // Students with technology
-      title: "<span class='text-white'>Shifting the Northstar from \"Literacy\" to</span> \"Career building\"",
+      image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      titleWhite: "Shifting the Northstar from \u201cLiteracy\u201d to",
+      titleAccent: " \u201cCareer building\u201d",
       description: "Helping them realise their potential through side-hustles/digital gigs. Making them Job-ready"
     },
     {
-      image: "https://images.unsplash.com/photo-1529390003868-6c01d73923f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",  // Group of diverse students
-      title: "<span class='text-white'>We create Learners</span> and Earners",
+      image: "https://images.unsplash.com/photo-1529390003868-6c01d73923f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      titleWhite: "We create Learners",
+      titleAccent: " and Earners",
       description: "Enabling them to complete their education and build sustainable career"
     }
   ],
@@ -35,3 +37,5 @@ export const BRAND = {
   name: "ShaktiPath",
   tagline: "Empowering Her"
 };
+
+export const FORMSPREE_URL = 'https://formspree.io/f/xgolnaqj';
