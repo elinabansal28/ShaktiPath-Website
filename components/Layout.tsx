@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Heart, Smartphone, ChevronDown, CheckCircle } from 'lucide-react';
 import BrandLogo from './BrandLogo';
+import BackToTop from './BackToTop';
 import { FORMSPREE_URL } from '../constants';
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -193,6 +194,8 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         {children}
       </main>
 
+      <BackToTop />
+
       {/* Footer */}
       <footer className="bg-gradient-to-br from-brand-magentaDark to-brand-magenta text-white pt-20 pb-10 rounded-t-[3rem] mt-12 relative overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-4xl bg-brand-magentaLight opacity-20 blur-[100px] rounded-full pointer-events-none"></div>
@@ -234,6 +237,8 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                 <li><Link to="/about" className="hover:text-white hover:translate-x-1 transition-all inline-block">Who We Are</Link></li>
                 <li><Link to="/curriculum" className="hover:text-white hover:translate-x-1 transition-all inline-block">Our Work</Link></li>
                 <li><Link to="/impact" className="hover:text-white hover:translate-x-1 transition-all inline-block">Impact & Data</Link></li>
+                <li><Link to="/stories" className="hover:text-white hover:translate-x-1 transition-all inline-block">Impact Stories</Link></li>
+                <li><Link to="/gallery" className="hover:text-white hover:translate-x-1 transition-all inline-block">Gallery</Link></li>
                 <li><Link to="/app" className="hover:text-white hover:translate-x-1 transition-all inline-block">Mobile App</Link></li>
               </ul>
             </div>
@@ -245,7 +250,9 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                 <li><Link to="/get-involved" className="hover:text-white hover:translate-x-1 transition-all inline-block">Volunteer</Link></li>
                 <li><Link to="/get-involved" className="hover:text-white hover:translate-x-1 transition-all inline-block">Become a Mentor</Link></li>
                 <li><Link to="/get-involved" className="hover:text-white hover:translate-x-1 transition-all inline-block">Partner with Us</Link></li>
-                <li><Link to="/get-involved" className="hover:text-white hover:translate-x-1 transition-all inline-block">Donate / Sponsor</Link></li>
+                <li><Link to="/donate" className="hover:text-white hover:translate-x-1 transition-all inline-block">Donate / Sponsor</Link></li>
+                <li><Link to="/events" className="hover:text-white hover:translate-x-1 transition-all inline-block">Events</Link></li>
+                <li><Link to="/faq" className="hover:text-white hover:translate-x-1 transition-all inline-block">FAQ</Link></li>
               </ul>
             </div>
 

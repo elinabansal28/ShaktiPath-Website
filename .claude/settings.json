@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run build)",
+      "Bash(npx vite build)",
+      "Bash(./node_modules/.bin/vite build)",
+      "Bash(npm install)",
+      "Bash(npm run dev)",
+      "Bash(node --version)",
+      "Bash(npm --version)",
+      "Bash(node -e \"const l = JSON.parse\\(require\\(''fs''\\).readFileSync\\(''package-lock.json'',''utf8''\\)\\); console.log\\(''lockfileVersion:'', l.lockfileVersion\\); console.log\\(''npm version that created this:'', l.npmVersion || ''not recorded''\\);\")",
+      "Bash(git add .npmrc vercel.json)",
+      "Bash(git commit -m \"Fix Vercel install: use .npmrc for legacy-peer-deps and npm ci\")",
+      "Bash(git push origin main)",
+      "Bash(npm ci)",
+      "Bash(echo \"EXIT: $?\")"
+    ]
+  }
+}

@@ -11,6 +11,12 @@ import WhyShaktiPath from './pages/WhyShaktiPath';
 import Impact from './pages/Impact';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
+import Stories from './pages/Stories';
+import NotFound from './pages/NotFound';
+import FAQ from './pages/FAQ';
+import Gallery from './pages/Gallery';
+import Events from './pages/Events';
+import Donate from './pages/Donate';
 
 const App: React.FC = () => {
   return (
@@ -29,9 +35,12 @@ const App: React.FC = () => {
           <Route path="/impact" element={<Impact />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
-          {/* Fallback routes */}
-          <Route path="/stories" element={<Navigate to="/" replace />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
+          <Route path="/stories" element={<Stories />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/donate" element={<Donate />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
     </HashRouter>
