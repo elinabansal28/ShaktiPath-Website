@@ -1,4 +1,5 @@
 import React from 'react';
+import { IMAGES } from '../constants';
 
 const About: React.FC = () => {
   return (
@@ -17,10 +18,10 @@ const About: React.FC = () => {
         {/* Slanted Image Section */}
         <div className="absolute top-0 right-0 w-full md:w-[55%] h-full hidden md:block">
            <div className="absolute inset-0 transform -skew-x-12 origin-top-left overflow-hidden z-10">
-              <img 
-                src="https://images.unsplash.com/photo-1529209074137-c6bce7188f6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80" 
-                alt="Girls walking together in India" 
-                className="w-full h-full object-cover transform skew-x-12 scale-125 origin-top-left" 
+              <img
+                src={IMAGES.ABOUT_TEAM}
+                alt="Girls walking together in India"
+                className="w-full h-full object-cover transform skew-x-12 scale-125 origin-top-left"
               />
            </div>
         </div>

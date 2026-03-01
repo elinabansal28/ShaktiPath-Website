@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { TrendingUp, BookOpen, Target, ArrowRight, Lightbulb, Users, CheckCircle } from 'lucide-react';
+import { IMAGES } from '../constants';
 
 const WhyShaktiPath: React.FC = () => {
   return (
@@ -16,9 +17,9 @@ const WhyShaktiPath: React.FC = () => {
                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-brand-magenta opacity-10 rounded-full blur-3xl -z-10 group-hover:opacity-20 transition-opacity duration-500"></div>
                
                <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl border-[6px] border-white transform md:rotate-[-2deg] hover:rotate-0 transition-transform duration-500">
-                  <img 
-                    src="https://images.unsplash.com/photo-1615967675239-012581691458?q=80&w=1000&auto=format&fit=crop" 
-                    alt="Indian girl student holding books with a concerned expression" 
+                  <img
+                    src={IMAGES.WHY_HERO}
+                    alt="Indian girl student holding books with a concerned expression"
                     className="w-full h-[400px] md:h-[600px] object-cover filter brightness-90 contrast-110"
                   />
                   {/* Subtle overlay to enhance 'sad/moody' look */}

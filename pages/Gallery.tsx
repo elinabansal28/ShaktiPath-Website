@@ -1,71 +1,10 @@
 import React, { useState } from 'react';
 import { X } from 'lucide-react';
+import { IMAGES } from '../constants';
 
 type Category = 'All' | 'Workshops' | 'Mentoring' | 'App' | 'Community';
 
-interface GalleryImage {
-  src: string;
-  alt: string;
-  category: Exclude<Category, 'All'>;
-  caption: string;
-}
-
-const images: GalleryImage[] = [
-  {
-    src: 'https://images.unsplash.com/photo-1577896335608-29bd2a839356?q=80&w=800&auto=format&fit=crop',
-    alt: 'Girls in a workshop session',
-    category: 'Workshops',
-    caption: 'AI Basics workshop — Kalyan School, Feb 2025',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800&auto=format&fit=crop',
-    alt: 'Students learning on computers',
-    category: 'Workshops',
-    caption: 'Hands-on coding session with 40 students',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1529390003868-6c01d73923f8?q=80&w=800&auto=format&fit=crop',
-    alt: 'Girls collaborating on a project',
-    category: 'Community',
-    caption: 'Teamwork — project presentation day',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=800&auto=format&fit=crop',
-    alt: 'Mentor with students',
-    category: 'Mentoring',
-    caption: 'One-on-one mentor session — Ambernath pilot',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1555421689-d68471e189f2?q=80&w=800&auto=format&fit=crop',
-    alt: 'Student using the ShaktiPath app',
-    category: 'App',
-    caption: 'Testing the ShaktiPath app\'s AI tutor feature',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1517842645767-c639042777db?q=80&w=800&auto=format&fit=crop',
-    alt: 'Group of girls at a workshop',
-    category: 'Workshops',
-    caption: 'Certificate distribution — Cohort 1 graduation',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop',
-    alt: 'Young woman on a laptop',
-    category: 'Mentoring',
-    caption: 'Remote mentoring pilot — video check-in',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop',
-    alt: 'Students working together',
-    category: 'Community',
-    caption: 'Community study group — student-led initiative',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=800&auto=format&fit=crop',
-    alt: 'Girl presenting her project',
-    category: 'Community',
-    caption: 'Project showcase — Priya presents her mother\'s website',
-  },
-];
+type GalleryImage = typeof IMAGES.GALLERY[number];
 
 const categories: Category[] = ['All', 'Workshops', 'Mentoring', 'App', 'Community'];
 
@@ -73,6 +12,7 @@ const Gallery: React.FC = () => {
   const [active, setActive] = useState<Category>('All');
   const [lightbox, setLightbox] = useState<GalleryImage | null>(null);
 
+  const images = IMAGES.GALLERY;
   const filtered = active === 'All' ? images : images.filter(img => img.category === active);
 
   return (
