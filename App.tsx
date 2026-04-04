@@ -17,6 +17,7 @@ import FAQ from './pages/FAQ';
 import Gallery from './pages/Gallery';
 import Events from './pages/Events';
 import Donate from './pages/Donate';
+import Workshops from './pages/Workshops';
 
 const App: React.FC = () => {
   return (
@@ -28,7 +29,7 @@ const App: React.FC = () => {
           <Route path="/about" element={<About />} />
           <Route path="/programs" element={<Navigate to="/curriculum" replace />} />
           <Route path="/curriculum" element={<Curriculum />} />
-          <Route path="/workshops" element={<div className="container mx-auto py-20 text-center text-2xl font-bold text-gray-500">Workshops Coming Soon</div>} />
+          <Route path="/workshops" element={<Workshops />} />
           <Route path="/app" element={<AppPage />} />
           <Route path="/get-involved" element={<GetInvolved />} />
           <Route path="/contact" element={<Contact />} />

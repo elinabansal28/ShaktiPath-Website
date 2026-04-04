@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { CheckCircle, Shield, Download, Layout, Book, MessageCircle, Heart, Lock } from 'lucide-react';
 import PhoneMockup from '../components/PhoneMockup';
-import { FORMSPREE_URL } from '../constants';
+import { FORMSPREE_URL, IMAGES } from '../constants';
 
 const AppPage: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -71,98 +71,20 @@ const AppPage: React.FC = () => {
   const inputClass = (err?: string) =>
     `w-full px-4 py-2 rounded-lg border focus:border-brand-magenta outline-none text-sm ${err ? 'border-red-400' : 'border-gray-200'}`;
 
-  const screens = [
-    {
-      id: 'home',
-      label: 'Home Dashboard',
-      content: (
-        <div className="flex flex-col h-full bg-brand-surface p-4 font-sans">
-          <div className="flex justify-between items-center mb-6">
-            <div className="font-bold text-lg text-gray-800">Namaste, Priya</div>
-            <div className="w-8 h-8 bg-brand-magenta text-white rounded-full flex items-center justify-center font-bold">P</div>
-          </div>
-          <div className="mb-4">
-            <h4 className="text-xs uppercase text-gray-500 font-bold mb-2">Your Path This Week</h4>
-            <div className="bg-white p-3 rounded-xl shadow-sm border-l-4 border-brand-magenta mb-2">
-              <div className="flex justify-between text-xs font-bold mb-1">
-                <span>AI Basics</span>
-                <span className="text-brand-magenta">60%</span>
-              </div>
-              <p className="text-[10px] text-gray-500">Next: Understanding Bias</p>
-            </div>
-            <div className="bg-white p-3 rounded-xl shadow-sm border-l-4 border-brand-magentaLight">
-              <div className="flex justify-between text-xs font-bold mb-1">
-                <span>Project Studio</span>
-                <span className="text-brand-magenta">Active</span>
-              </div>
-              <p className="text-[10px] text-gray-500">Draft your poster idea</p>
-            </div>
-          </div>
-          <div className="bg-brand-surface p-3 rounded-xl mt-auto">
-            <p className="text-[10px] font-bold text-brand-magentaDark flex items-center gap-1"><CheckCircle size={10} /> Offline Mode Ready</p>
-          </div>
-        </div>
-      )
-    },
-    {
-      id: 'ai',
-      label: 'AI Helper',
-      content: (
-        <div className="flex flex-col h-full bg-white font-sans">
-          <div className="bg-brand-magenta p-4 text-white">
-            <h3 className="font-bold text-sm flex items-center gap-2"><Layout size={14} /> AI Tutor</h3>
-          </div>
-          <div className="flex-1 p-4 space-y-3 overflow-y-auto">
-            <div className="flex gap-2">
-              <div className="w-6 h-6 rounded-full bg-gray-200 flex-shrink-0"></div>
-              <div className="bg-gray-100 p-2 rounded-lg rounded-tl-none text-[10px] text-gray-700">
-                How can I help you learn today?
-              </div>
-            </div>
-            <div className="flex gap-2 flex-row-reverse">
-              <div className="w-6 h-6 rounded-full bg-brand-surface flex-shrink-0"></div>
-              <div className="bg-brand-surface p-2 rounded-lg rounded-tr-none text-[10px] text-gray-800">
-                Explain "Algorithm" in simple Marathi.
-              </div>
-            </div>
-            <div className="flex gap-2">
-              <div className="w-6 h-6 rounded-full bg-brand-magenta flex-shrink-0"></div>
-              <div className="bg-gray-100 p-2 rounded-lg rounded-tl-none text-[10px] text-gray-700">
-                Sure! An algorithm is like a recipe…
-              </div>
-            </div>
-          </div>
-          <div className="p-3 border-t">
-            <div className="bg-gray-50 text-gray-400 text-xs p-2 rounded-full text-center">Type your question…</div>
-          </div>
-        </div>
-      )
-    },
-    {
-      id: 'mentor',
-      label: 'Mentor Connect',
-      content: (
-        <div className="flex flex-col h-full bg-brand-surface p-4 font-sans">
-          <h3 className="font-bold text-gray-800 mb-4">Your Mentor</h3>
-          <div className="bg-white p-4 rounded-xl shadow-sm text-center mb-4">
-            <div className="w-16 h-16 bg-brand-magenta/10 rounded-full mx-auto mb-2 flex items-center justify-center text-brand-magentaDark font-bold text-xl">S</div>
-            <h4 className="font-bold text-sm">Sarah D.</h4>
-            <p className="text-[10px] text-gray-500">Software Engineer, Pune</p>
-          </div>
-          <div className="space-y-2">
-            <div className="bg-white p-3 rounded-lg border border-gray-100 flex items-center justify-between">
-              <span className="text-xs font-medium">Next Call</span>
-              <span className="text-[10px] bg-green-100 text-green-700 px-2 py-1 rounded">Sat, 4PM</span>
-            </div>
-            <div className="bg-white p-3 rounded-lg border border-gray-100">
-              <p className="text-xs font-bold mb-1">Topic:</p>
-              <p className="text-[10px] text-gray-600">Reviewing your website project ideas.</p>
-            </div>
-          </div>
-        </div>
-      )
-    }
-  ];
+  // App screenshots — configurable via constants.ts
+  // Drop your screenshots into public/images/app/ and update IMAGES.APP_SCREENSHOTS
+  const screens = IMAGES.APP_SCREENSHOTS.map(s => ({
+    id: s.label.toLowerCase().replace(/\s+/g, '-'),
+    label: s.label,
+    caption: s.caption,
+    content: (
+      <img
+        src={s.src}
+        alt={s.alt}
+        className="w-full h-full object-cover object-top"
+      />
+    ),
+  }));
 
   return (
     <div className="bg-white">
@@ -222,7 +144,7 @@ const AppPage: React.FC = () => {
             <div className="lg:w-1/2 flex justify-center lg:justify-end">
               <div className="relative">
                 <div className="absolute -inset-4 bg-gradient-to-tr from-brand-magenta to-brand-magentaLight rounded-full blur-2xl opacity-20"></div>
-                <PhoneMockup label="Learning Path Interface">
+                <PhoneMockup label={screens[0].label}>
                   {screens[0].content}
                 </PhoneMockup>
               </div>
@@ -260,21 +182,40 @@ const AppPage: React.FC = () => {
       </section>
 
       {/* Screen Showcase */}
-      <section className="py-20 bg-gradient-to-br from-brand-magentaLight to-brand-magentaDark text-white">
+      <section className="py-24 bg-gradient-to-br from-brand-magentaLight to-brand-magentaDark text-white overflow-hidden">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold">Inside the App</h2>
-            <p className="text-cyan-100 mt-2">Clean, accessible, and intuitive.</p>
+          <div className="text-center mb-16">
+            <p className="text-xs font-bold uppercase tracking-widest text-cyan-200 mb-3">Real Screenshots</p>
+            <h2 className="text-4xl font-bold">Inside the App</h2>
+            <p className="text-cyan-100 mt-3 text-lg font-light">Clean, accessible, and built for her reality.</p>
           </div>
-          <div className="flex flex-wrap justify-center gap-8 lg:gap-16">
-            {screens.map(screen => (
-              <div key={screen.id} className="transform hover:-translate-y-2 transition-transform duration-300">
-                <PhoneMockup label={screen.label}>
-                  {screen.content}
-                </PhoneMockup>
-              </div>
-            ))}
+
+          <div className="flex flex-wrap justify-center items-end gap-6 lg:gap-10">
+            {screens.map((screen, idx) => {
+              const isCenter = idx === 1;
+              return (
+                <div
+                  key={screen.id}
+                  className={`flex flex-col items-center transition-all duration-500 hover:-translate-y-3 ${isCenter ? '-translate-y-6' : 'opacity-90 hover:opacity-100'}`}
+                >
+                  {/* Glow ring for center phone */}
+                  <div className={`rounded-[3rem] transition-all duration-500 ${isCenter ? 'shadow-[0_0_60px_rgba(255,255,255,0.25)] scale-110' : 'hover:shadow-[0_0_30px_rgba(255,255,255,0.15)]'}`}>
+                    <PhoneMockup label={screen.label}>
+                      {screen.content}
+                    </PhoneMockup>
+                  </div>
+                  {/* Caption below phone */}
+                  <p className={`mt-4 text-xs font-semibold text-center max-w-[140px] leading-snug ${isCenter ? 'text-white' : 'text-white/60'}`}>
+                    {screen.caption}
+                  </p>
+                </div>
+              );
+            })}
           </div>
+
+          <p className="text-center text-white/40 text-xs mt-12 font-medium tracking-wide">
+            Screenshots shown are from the live ShaktiPath app
+          </p>
         </div>
       </section>
 

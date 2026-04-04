@@ -97,22 +97,6 @@ const About: React.FC = () => {
         </div>
       </section>
 
-      {/* Workshop image strip */}
-      <section className="py-0">
-        <div className="grid grid-cols-3 h-56 md:h-72">
-          {[
-            { src: IMAGES.GALLERY[0].src, alt: IMAGES.GALLERY[0].alt },
-            { src: IMAGES.GALLERY[2].src, alt: IMAGES.GALLERY[2].alt },
-            { src: IMAGES.GALLERY[3].src, alt: IMAGES.GALLERY[3].alt },
-          ].map((img, i) => (
-            <div key={i} className="overflow-hidden relative">
-              <img src={img.src} alt={img.alt} className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
-              <div className="absolute inset-0 bg-brand-magentaDark/20" />
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* Values */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">

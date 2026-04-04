@@ -1,10 +1,8 @@
-# App Page Images
+# App Screenshots
 
-- app-hero.jpg         → Hero/banner on the /app page. Wide landscape, 1000×600px min.
-- screenshot-1.jpg     → App screenshot shown in gallery / app page
-- screenshot-2.jpg     → App screenshot 2
-- screenshot-3.jpg     → App screenshot 3
-- screenshot-4.jpg     → App screenshot 4
+Drop 3 portrait screenshots here (9:19 ratio, e.g. 390×844px):
+- screenshot-1.jpg  → Home Dashboard screen
+- screenshot-2.jpg  → AI Helper screen
+- screenshot-3.jpg  → Mentor Connect screen
 
-Screenshots: portrait ratio (9:16 or 9:19) works best.
-After adding, update APP_HERO and APP_SCREENSHOTS in constants.ts.
+Then update IMAGES.APP_SCREENSHOTS in constants.ts with the local paths.
