@@ -91,12 +91,12 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       {/* Navigation */}
       <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 shadow-sm transition-all duration-300">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-20">
+          <div className="flex items-center justify-between h-24">
 
             {/* Logo */}
             <div className="flex-1 flex justify-start items-center min-w-0">
-              <Link to="/" className="flex items-center group py-4 shrink-0">
-                <BrandLogo className="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
+              <Link to="/" className="flex items-center group shrink-0">
+                <BrandLogo className="h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
               </Link>
             </div>
 
@@ -234,7 +234,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 
             {/* Brand */}
             <div>
-              <div className="flex items-center mb-4 h-10">
+              <div className="flex items-center mb-4 h-20">
                 <BrandLogo className="h-full w-auto" />
               </div>
               <p className="text-slate-300 text-sm leading-relaxed mb-5">
