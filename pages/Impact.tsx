@@ -149,6 +149,42 @@ const Impact: React.FC = () => {
               Read all impact stories <ChevronRight size={16} />
             </Link>
           </div>
+
+          {/* Video Testimonials */}
+          <div className="mt-20">
+            <div className="text-center mb-10">
+              <p className="text-xs font-bold uppercase tracking-widest text-brand-magenta mb-2">Voices from the Field</p>
+              <h2 className="text-3xl font-bold text-gray-900">Hear it from <span className="gradient-text">them</span></h2>
+            </div>
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Student testimonial */}
+              <div>
+                <div className="relative rounded-2xl overflow-hidden shadow-xl ring-2 ring-brand-magenta/15 aspect-video">
+                  <iframe
+                    src="https://www.youtube-nocookie.com/embed/?rel=0&modestbranding=1"
+                    title="Student Testimonial — ShaktiPath"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="w-full h-full"
+                  />
+                </div>
+                <p className="text-center text-sm font-semibold text-gray-700 mt-3">Student Testimonial</p>
+              </div>
+              {/* Teacher testimonial */}
+              <div>
+                <div className="relative rounded-2xl overflow-hidden shadow-xl ring-2 ring-brand-magenta/15 aspect-video">
+                  <iframe
+                    src="https://www.youtube-nocookie.com/embed/?rel=0&modestbranding=1"
+                    title="Teacher Testimonial — ShaktiPath"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="w-full h-full"
+                  />
+                </div>
+                <p className="text-center text-sm font-semibold text-gray-700 mt-3">Teacher Testimonial</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
