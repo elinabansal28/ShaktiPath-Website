@@ -6,8 +6,8 @@ import { IMAGES } from '../constants';
 
 const testimonials = [
   { quote: 'I used to think computers were for boys. Now I\'m building a website for my mother\'s shop.', name: 'Priya', age: 14, location: 'Kalyan', skill: 'Web Design', color: 'from-brand-magenta to-brand-magentaDark' },
-  { quote: 'I earned ₹800 writing captions for a local salon. I used it to buy my school books.', name: 'Ranjana', age: 15, location: 'Kalyan', skill: 'Freelance Content', color: 'from-brand-teal to-cyan-700' },
-  { quote: 'I wrote a prompt that helped my teacher explain photosynthesis better. She asked me to teach the class.', name: 'Sarita', age: 16, location: 'Ambernath', skill: 'AI Prompting', color: 'from-purple-500 to-purple-800' },
+  { quote: 'I earned ₹800 writing captions for a local salon. I used it to buy my school books.', name: 'Ranjana', age: 15, location: 'Kalyan', skill: 'Freelance Content', color: 'from-brand-rose to-rose-700' },
+  { quote: 'I wrote a prompt that helped my teacher explain photosynthesis better. She asked me to teach the class.', name: 'Sarita', age: 16, location: 'Ambernath', skill: 'AI Prompting', color: 'from-brand-violet to-brand-navy' },
   { quote: 'I fixed a bug in my project and felt like a superhero. I want to become a software engineer.', name: 'Divya', age: 15, location: 'Kalyan', skill: 'Coding', color: 'from-rose-500 to-rose-700' },
 ];
 
@@ -53,7 +53,7 @@ const Home: React.FC = () => {
                   <span className="text-white">{slide.titleWhite}</span>
                   <span className="text-brand-yellow">{slide.titleAccent}</span>
                 </h1>
-                <p className="text-xl md:text-2xl text-white/90 max-w-lg leading-relaxed font-medium drop-shadow-md">
+                <p className="text-2xl md:text-3xl text-white max-w-lg leading-relaxed font-medium drop-shadow-md">
                   {slide.description}
                 </p>
                 <div className="flex flex-wrap gap-4 pt-2">
@@ -89,14 +89,15 @@ const Home: React.FC = () => {
       </section>
 
       {/* The Story / Problem-Solution */}
-      <section className="py-32 bg-white reveal">
+      <section className="py-20 bg-white bg-dot-grid reveal">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-7xl mx-auto mb-16">
-            <h2 className="text-2xl md:text-4xl font-medium text-gray-800 mb-6 leading-tight md:whitespace-nowrap">
+          <div className="text-center max-w-5xl mx-auto mb-16 bg-white rounded-3xl py-10 px-8 shadow-sm">
+            <p className="text-overline text-brand-magenta mb-3">Our Mission</p>
+            <h2 className="text-3xl md:text-5xl font-bold text-brand-ink mb-0 leading-tight">
               We bridge the gap between{' '}
-              <span className="text-brand-magenta decoration-wavy underline decoration-brand-magentaLight/50">Aspiration</span>
-              {' '}<span className="text-black">&</span>{' '}
-              <span className="text-brand-magenta decoration-wavy underline decoration-brand-magentaLight/50">Access</span>.
+              <span className="gradient-text">Aspiration</span>
+              {' '}&{' '}
+              <span className="gradient-text">Access</span>.
             </h2>
           </div>
 
@@ -120,7 +121,7 @@ const Home: React.FC = () => {
                 <div className="w-16 h-16 rounded-full bg-white border-2 border-brand-magenta text-brand-magenta flex items-center justify-center text-2xl font-bold shadow-[4px_4px_0px_0px_#22d3ee] mb-6 z-10 relative transition-transform hover:-translate-y-1">
                   {idx + 1}
                 </div>
-                <div className="w-full p-6 rounded-3xl bg-white border-2 border-brand-magenta shadow-[6px_6px_0px_0px_#22d3ee] hover:shadow-[8px_8px_0px_0px_#22d3ee] hover:-translate-y-1 transition-all duration-300 flex flex-col min-h-[280px] relative z-20">
+                <div className="w-full p-6 rounded-3xl bg-white border-2 border-brand-magenta shadow-[6px_6px_0px_0px_#22d3ee] hover:shadow-[8px_8px_0px_0px_#22d3ee] hover:-translate-y-1 transition-all duration-300 flex flex-col min-h-[220px] relative z-20">
                   <div className="w-14 h-14 rounded-xl flex items-center justify-center mb-6 bg-brand-surface text-brand-magenta shrink-0">
                     {card.icon}
                   </div>
@@ -183,7 +184,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* App Integration Section */}
+      {/* App Integration Section — violet/navy signals AI/tech */}
       <section className="py-24 bg-gradient-to-br from-brand-magentaLight to-brand-magentaDark text-white overflow-hidden relative reveal">
         <div className="absolute top-0 left-0 w-full h-full opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -250,8 +251,38 @@ const Home: React.FC = () => {
         </div>
       </section>
 
+      {/* Featured Story */}
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-gradient-to-br from-brand-magentaLight to-brand-magentaDark rounded-[3rem] overflow-hidden text-white shadow-2xl shadow-brand-magenta/20">
+            <div className="flex flex-col md:flex-row">
+              <div className="md:w-1/2 relative h-72 md:h-auto overflow-hidden">
+                <img
+                  src={IMAGES.HOME_FEATURE}
+                  alt="Girl presenting her project"
+                  className="absolute inset-0 w-full h-full object-cover opacity-90 mix-blend-overlay hover:scale-105 transition-transform duration-1000"
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-brand-magentaDark/80 to-transparent md:bg-gradient-to-t" />
+              </div>
+              <div className="md:w-1/2 p-10 md:p-16 flex flex-col justify-center">
+                <div className="mb-6">
+                  <span className="bg-white/20 backdrop-blur text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider border border-white/20">Transformation Story</span>
+                </div>
+                <h3 className="text-3xl font-bold mb-6 text-white leading-snug">"I earned ₹800 writing captions for a local salon. I used it to buy my own school books."</h3>
+                <p className="text-white mb-10 italic text-lg flex items-center gap-2">
+                  <span className="w-8 h-px bg-brand-magentaLight" /> Ranjana, 15, Kalyan
+                </p>
+                <Link to="/stories" className="inline-flex items-center text-white font-bold hover:text-brand-teal transition-colors group">
+                  Read more stories <ChevronRight className="ml-1 group-hover:translate-x-1 transition-transform" size={18} />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Band */}
-      <section className="py-24 bg-white text-center reveal">
+      <section className="py-24 bg-gradient-to-b from-white to-brand-surface text-center reveal">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold mb-6 text-brand-magentaDark">Join the movement today.</h2>
           <p className="text-xl text-gray-500 mb-10 max-w-2xl mx-auto leading-relaxed">

@@ -1,122 +1,142 @@
-/* Global Font Import - kept in HTML for preconnect performance */
+/* ============================================================
+   GLOBAL BASE
+   ============================================================ */
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #ecfeff; /* brand-surface (Cyan-50) */
-  color: #374151; /* gray-700 - softer than black */
+  background-color: #ffffff;
+  color: #1e293b; /* slate-800 — crisper than gray-700, better contrast */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 1.7;
 }
 
-/* Custom Scrollbar - Soft Cyan */
-::-webkit-scrollbar {
-  width: 10px;
+/* ============================================================
+   TYPOGRAPHY SCALE
+   Tighter tracking + heavier weight for headings
+   ============================================================ */
+h1, h2, h3, h4, h5 {
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  /* No global color — let headings inherit from their parent so text-white
+     on dark sections works correctly. Use text-brand-ink / text-gray-900
+     explicitly on light sections where needed. */
 }
 
-::-webkit-scrollbar-track {
-  background: #ecfeff;
+h1 { font-weight: 800; }
+h2 { font-weight: 700; }
+h3 { font-weight: 700; }
+
+/* Overline label — small all-caps category above headings */
+.text-overline {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
 }
 
+/* ============================================================
+   GRADIENT TEXT UTILITIES
+   ============================================================ */
+
+/* Cyan → Violet (brand tech fusion) */
+.gradient-text {
+  background: linear-gradient(135deg, #06b6d4 0%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Cyan → Teal */
+.gradient-text-cyan {
+  background: linear-gradient(135deg, #22d3ee 0%, #0891b2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Amber → Rose (warm energy) */
+.gradient-text-warm {
+  background: linear-gradient(135deg, #f59e0b 0%, #f43f5e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ============================================================
+   SECTION TEXTURE
+   ============================================================ */
+
+/* Subtle dot grid — adds depth to plain white sections */
+.bg-dot-grid {
+  background-image: radial-gradient(circle, #bae6fd 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* ============================================================
+   CUSTOM SCROLLBAR
+   ============================================================ */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #f0f9ff; }
 ::-webkit-scrollbar-thumb {
-  background: #a5f3fc; /* Cyan-200 */
-  border-radius: 5px;
-  border: 2px solid #ecfeff; /* Creates padding effect */
+  background: #a5f3fc;
+  border-radius: 4px;
+  border: 2px solid #f0f9ff;
 }
+::-webkit-scrollbar-thumb:hover { background: #0891b2; }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #22d3ee; /* brand-magentaLight (Cyan-400) */
-}
-
-/* Hero Carousel Animations */
-.hero-slide-enter {
-  opacity: 0;
-  transform: scale(1.02); /* Reduced movement for calmness */
-}
-
-.hero-slide-enter-active {
-  opacity: 1;
-  transform: scale(1);
-  transition: opacity 1200ms ease-in-out, transform 4000ms ease-out;
-}
-
-.hero-slide-exit {
-  opacity: 1;
-}
-
-.hero-slide-exit-active {
-  opacity: 0;
-  transition: opacity 1200ms ease-in-out;
-}
-
-/* General Utility Animations */
-.animate-fade-in {
-  animation: fadeIn 0.8s ease-out forwards;
-}
-
-.animate-fade-in-up {
-  animation: fadeInUp 1s ease-out forwards;
-}
+/* ============================================================
+   ANIMATIONS
+   ============================================================ */
+.animate-fade-in   { animation: fadeIn    0.8s ease-out forwards; }
+.animate-fade-in-up{ animation: fadeInUp  1s   ease-out forwards; }
 
 @keyframes fadeIn {
   from { opacity: 0; }
-  to { opacity: 1; }
+  to   { opacity: 1; }
 }
 
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(15px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
-/* Soft Selection */
-::selection {
-  background-color: #c4b5fd; /* Violet-300 */
-  color: #4c1d95; /* Violet-900 */
-}
-
-/* Scroll-triggered reveal animations */
+/* ============================================================
+   SCROLL-TRIGGERED REVEAL
+   ============================================================ */
 .reveal {
   opacity: 0;
   transform: translateY(28px);
   transition: opacity 0.65s ease-out, transform 0.65s ease-out;
 }
-
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
+.reveal.visible       { opacity: 1; transform: translateY(0); }
 
 .reveal-left {
   opacity: 0;
   transform: translateX(-28px);
   transition: opacity 0.65s ease-out, transform 0.65s ease-out;
 }
-
-.reveal-left.visible {
-  opacity: 1;
-  transform: translateX(0);
-}
+.reveal-left.visible  { opacity: 1; transform: translateX(0); }
 
 .reveal-right {
   opacity: 0;
   transform: translateX(28px);
   transition: opacity 0.65s ease-out, transform 0.65s ease-out;
 }
+.reveal-right.visible { opacity: 1; transform: translateX(0); }
 
-.reveal-right.visible {
-  opacity: 1;
-  transform: translateX(0);
+/* ============================================================
+   SELECTION COLOR
+   ============================================================ */
+::selection {
+  background-color: #7c3aed; /* brand-violet */
+  color: #ffffff;
 }
 
-/* Respect user's reduced-motion preference */
+/* ============================================================
+   REDUCED MOTION
+   ============================================================ */
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
+  *, *::before, *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;

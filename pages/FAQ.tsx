@@ -147,7 +147,8 @@ const FAQ: React.FC = () => {
         <div className="container mx-auto max-w-3xl space-y-10">
           {faqs.map((section) => (
             <div key={section.category} className="bg-white rounded-3xl shadow-sm p-8">
-              <h2 className="text-lg font-bold text-brand-magentaDark mb-2 pb-4 border-b border-brand-magenta/10">
+              <h2 className="text-xs font-bold text-brand-magenta tracking-widest uppercase mb-2 pb-4 border-b border-brand-magenta/10 flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-brand-magenta inline-block" />
                 {section.category}
               </h2>
               {section.items.map((item, i) => (

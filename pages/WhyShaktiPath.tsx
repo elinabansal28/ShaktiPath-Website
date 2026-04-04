@@ -29,11 +29,13 @@ const WhyShaktiPath: React.FC = () => {
 
             {/* Text Column */}
             <div className="w-full md:w-1/2 animate-fade-in-up text-center md:text-left">
-              <h1 className="text-4xl md:text-6xl font-extrabold leading-[1.1] text-brand-magentaDark mb-12 tracking-tight">
-                The Hidden Crisis: The Leaky Pipeline of Potential
+              <p className="text-overline text-brand-magenta mb-4">The Problem</p>
+              <h1 className="text-4xl md:text-6xl font-extrabold leading-[1.05] text-brand-ink mb-8 tracking-tighter">
+                The Hidden Crisis:<br />
+                <span className="gradient-text-warm">The Leaky Pipeline</span> of Potential
               </h1>
-              <p className="text-2xl md:text-3xl text-black font-semibold leading-relaxed max-w-xl mx-auto md:mx-0">
-                 She walks miles to school carrying her books and her dreams. But the path to a career is broken before she even starts.
+              <p className="text-xl md:text-2xl text-slate-600 font-medium leading-relaxed max-w-xl mx-auto md:mx-0">
+                She walks miles to school carrying her books and her dreams. But the path to a career is broken before she even starts.
               </p>
             </div>
 
