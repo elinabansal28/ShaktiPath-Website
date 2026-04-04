@@ -238,4 +238,4 @@ export const BRAND = {
   tagline: "Empowering Her"
 };
 
-export const FORMSPREE_URL = 'https://formspree.io/f/xgolnaqj';
+export const FORMSPREE_URL = 'https://formspree.io/f/mwvwwply';
