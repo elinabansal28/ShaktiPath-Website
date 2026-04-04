@@ -50,25 +50,25 @@ const WhyShaktiPath: React.FC = () => {
                <h2 className="text-2xl md:text-4xl font-extrabold mb-10 leading-tight text-gray-900 pb-2 max-w-5xl mx-auto">
                   Today, 96% of girls in India attend school. What an amazing achievement! <span className="underline decoration-wavy decoration-brand-magentaDark">But is this enough?</span>
                </h2>
-               
+
                <p className="text-2xl font-bold text-brand-magentaDark mb-16 leading-relaxed max-w-4xl mx-auto">
                   Does every girl enrolled at school complete her education? <br/>Is she equipped with marketable skills to start her career?
                </p>
-               
+
                <div className="max-w-5xl mx-auto">
-                  
+
                   {/* Row 1 */}
                   <div className="py-12 border-t-2 border-dotted border-brand-magenta/40">
                     <div className="grid md:grid-cols-2 gap-12 text-center">
                         <div>
                             <div className="text-6xl md:text-7xl font-bold text-brand-magentaDark mb-4 tracking-tight">12%</div>
-                            <p className="text-xl font-bold text-indigo-950 mb-2">High school drop out rate</p>
-                            <p className="text-sm font-medium text-indigo-900/70">1 out of every 8 girls is a drop out in high school</p>
+                            <p className="text-xl font-bold text-gray-900 mb-2">High school drop out rate</p>
+                            <p className="text-sm font-medium text-gray-500">1 out of every 8 girls is a drop out in high school</p>
                         </div>
                         <div>
                             <div className="text-6xl md:text-7xl font-bold text-brand-magentaDark mb-4 tracking-tight">30%</div>
-                            <p className="text-xl font-bold text-indigo-950 mb-2">Less spending on girl’s education</p>
-                            <p className="text-sm font-medium text-indigo-900/70">A girl’s education is an “Expense” while a boy’s education is an “Investment”</p>
+                            <p className="text-xl font-bold text-gray-900 mb-2">Less spending on girl’s education</p>
+                            <p className="text-sm font-medium text-gray-500">A girl’s education is an "Expense" while a boy’s education is an "Investment"</p>
                         </div>
                     </div>
                   </div>
@@ -78,13 +78,13 @@ const WhyShaktiPath: React.FC = () => {
                     <div className="grid md:grid-cols-2 gap-12 text-center">
                         <div>
                             <div className="text-6xl md:text-7xl font-bold text-brand-magentaDark mb-4 tracking-tight">1/3rd</div>
-                            <p className="text-xl font-bold text-indigo-950 mb-2">Of girls' time is spent</p>
-                            <p className="text-sm font-medium text-indigo-900/70">In fulfilling domestic duties or caring for a family member</p>
+                            <p className="text-xl font-bold text-gray-900 mb-2">Of girls’ time is spent</p>
+                            <p className="text-sm font-medium text-gray-500">In fulfilling domestic duties or caring for a family member</p>
                         </div>
                         <div>
                             <div className="text-6xl md:text-7xl font-bold text-brand-magentaDark mb-4 tracking-tight">44%</div>
-                            <p className="text-xl font-bold text-indigo-950 mb-2">NEET rate for Indian Women</p>
-                            <p className="text-sm font-medium text-indigo-900/70">NEET : (Not in Education, Employment, or Training)</p>
+                            <p className="text-xl font-bold text-gray-900 mb-2">NEET rate for Indian Women</p>
+                            <p className="text-sm font-medium text-gray-500">NEET : (Not in Education, Employment, or Training)</p>
                         </div>
                     </div>
                   </div>
@@ -95,11 +95,11 @@ const WhyShaktiPath: React.FC = () => {
       </section>
 
       {/* The Shift: Literacy vs Career */}
-      <section className="py-20 bg-gradient-to-b from-brand-surface to-cyan-100">
+      <section className="py-20 bg-[#fdf4f7]">
          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center w-full mx-auto mb-16">
                <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 md:whitespace-nowrap">
-                  We're redefining the <span className="text-brand-magentaDark">"North Star"</span> for her
+                  We're redefining the <span className="gradient-text">"North Star"</span> for her
                </h2>
             </div>
 
@@ -158,7 +158,7 @@ const WhyShaktiPath: React.FC = () => {
       {/* Three Pillars */}
       <section className="py-24 bg-white text-center">
          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-4xl md:text-5xl font-medium mb-16 text-black">How We Do It</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-16 text-gray-900">How We <span className="gradient-text">Do It</span></h2>
             <div className="grid md:grid-cols-3 gap-8">
                {[
                  {
@@ -192,9 +192,9 @@ const WhyShaktiPath: React.FC = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-white text-center">
+      <section className="py-20 bg-[#fdf4f7] text-center">
          <div className="container mx-auto px-4 max-w-4xl">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Be Part of the Shift</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">Be Part of the <span className="gradient-text">Shift</span></h2>
             <p className="text-xl text-gray-600 mb-10">
                Help us turn potential into power. It costs less than you think to change a trajectory.
             </p>

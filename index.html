@@ -6,8 +6,8 @@
     <title>ShaktiPath | From Potential to Power</title>
     <meta name="description" content="ShaktiPath empowers underserved girls in India through practical digital skills, AI literacy, and mentorship." />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Poppins: added weight 800 for display headings + italic -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <!-- Poppins (body) + Playfair Display (editorial display headings) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
     <script>
       tailwind.config = {
         theme: {
@@ -18,32 +18,30 @@
             colors: {
               brand: {
                 // ── Page Backgrounds ─────────────────────────────────────
-                surface: '#f0f9ff',       // Sky-50: subtle warm tint (was cyan-50)
+                surface: '#fdf4f7',       // Very pale warm pink — no more blue/green tint
                 surfaceAlt: '#faf5ff',    // Violet-50: AI / tech sections
 
-                // ── Primary Brand: Cyan ───────────────────────────────────
-                magenta: '#06b6d4',       // Cyan-500: primary brand / interactive
-                magentaDark: '#0e7490',   // Cyan-700: dark variant (4.9:1 contrast ✓)
-                magentaLight: '#22d3ee',  // Cyan-400: bright highlights / glows
+                // ── Primary Brand: Magenta (true pink) ────────────────────
+                magenta: '#d4185c',       // Deep hot pink-magenta — real brand colour
+                magentaDark: '#9d1258',   // Dark magenta — hover states, dark text
+                magentaLight: '#f472b6',  // Light pink — highlights, glows
 
-                // ── Accent: Teal (proper contrast) ────────────────────────
-                teal: '#0891b2',          // Cyan-600 (was neon #00e5ff — unusable for text)
+                // ── Accent: Teal (cool secondary accent) ──────────────────
+                teal: '#0891b2',          // Cyan-600 — secondary accent only
 
                 // ── Accent: Rose / Coral (warmth, stories, impact) ────────
-                rose: '#f43f5e',          // Rose-500 (was rose-400 — bolder, more vibrant)
+                rose: '#f43f5e',          // Rose-500
 
                 // ── Accent: Amber (energy, optimism, CTAs) ────────────────
-                yellow: '#f59e0b',        // Amber-500 (richer than amber-400)
+                yellow: '#f59e0b',        // Amber-500
 
-                // ── NEW: Navy (dark sections, premium depth) ──────────────
-                navy: '#0c1a2e',          // Deep navy — dark hero overlays, footer
+                // ── Dark sections ──────────────────────────────────────────
+                navy: '#1a1a2e',          // Deep navy — dark hero overlays, footer
+                ink:  '#1a1a2e',          // Near-black — display headings
 
-                // ── NEW: Violet (AI, innovation, tech layer) ──────────────
-                violet: '#7c3aed',        // Violet-600 — AI section start
-                violetLight: '#a78bfa',   // Violet-400 — soft highlights
-
-                // ── NEW: Ink (headings, maximum contrast) ─────────────────
-                ink: '#0f172a',           // Slate-900 — display headings
+                // ── Accent: Violet (AI / tech) ────────────────────────────
+                violet: '#7c3aed',        // Violet-600
+                violetLight: '#a78bfa',   // Violet-400
               }
             },
             letterSpacing: {
@@ -66,7 +64,7 @@
 </script>
 <link rel="stylesheet" href="/index.css">
 </head>
-  <body class="bg-white text-slate-700 antialiased selection:bg-brand-violet selection:text-white">
+  <body class="bg-white text-gray-700 antialiased selection:bg-brand-magenta selection:text-white">
     <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
 </body>

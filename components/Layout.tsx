@@ -108,7 +108,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                     to={link.path}
                     className={`text-base font-semibold transition-all duration-200 whitespace-nowrap flex items-center gap-1.5 pb-1 border-b-2 ${
                       link.highlight
-                        ? 'text-white bg-gradient-to-r from-brand-magenta to-brand-teal px-5 py-2.5 rounded-full border-0 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all'
+                        ? 'text-white bg-gradient-to-r from-brand-magenta to-brand-magentaDark px-5 py-2.5 rounded-full border-0 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all'
                         : isActive(link.path)
                           ? 'text-brand-magentaDark border-brand-magenta'
                           : 'text-slate-700 border-transparent hover:text-brand-magentaDark hover:border-brand-magentaLight'
@@ -170,7 +170,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                     to={link.path}
                     className={`block px-4 py-3.5 rounded-xl text-base font-semibold transition-colors ${
                       link.highlight
-                        ? 'text-white bg-gradient-to-r from-brand-magenta to-brand-teal mt-2'
+                        ? 'text-white bg-gradient-to-r from-brand-magenta to-brand-magentaDark mt-2'
                         : isActive(link.path)
                           ? 'text-brand-magentaDark bg-brand-surface'
                           : 'text-slate-700 hover:text-brand-magentaDark hover:bg-brand-surface'

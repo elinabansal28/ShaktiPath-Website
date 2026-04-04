@@ -138,11 +138,12 @@ const GetInvolved: React.FC = () => {
   };
 
   return (
-    <div className="bg-brand-surface min-h-screen py-16">
+    <div className="bg-[#fdf4f7] min-h-screen py-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold mb-4">Join Us</h1>
-          <p className="text-gray-600">Choose how you want to contribute to the movement.</p>
+          <p className="text-xs font-bold uppercase tracking-[0.18em] text-brand-magenta mb-3" style={{fontFamily: "'Poppins', sans-serif"}}>Take Action</p>
+          <h1 className="text-4xl font-bold mb-4 text-gray-900">Join <span className="gradient-text">the Movement</span></h1>
+          <p className="text-gray-500">Choose how you want to contribute.</p>
         </div>
 
         <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-12">
@@ -306,7 +307,7 @@ const GetInvolved: React.FC = () => {
                     </div>
                     {partnerError && <p className="text-red-500 text-sm">{partnerError}</p>}
                     <button type="submit" disabled={partnerSubmitting}
-                      className="bg-brand-teal text-white px-8 py-3 rounded-lg font-bold hover:opacity-90 transition-opacity disabled:opacity-60 disabled:cursor-not-allowed">
+                      className="bg-brand-magenta text-white px-8 py-3 rounded-lg font-bold hover:bg-brand-magentaDark transition-colors disabled:opacity-60 disabled:cursor-not-allowed">
                       {partnerSubmitting ? 'Submitting…' : 'Request Partnership Deck'}
                     </button>
                   </form>

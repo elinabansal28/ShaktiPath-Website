@@ -47,7 +47,7 @@ const StatCard: React.FC<StatCardProps> = ({ number, suffix, title, desc, color 
   return (
     <div
       ref={ref}
-      className="bg-gradient-to-br from-brand-surface to-white p-8 rounded-[2rem] border border-brand-magenta/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group"
+      className="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col items-center text-center group"
     >
       <span className={`text-5xl md:text-6xl font-bold mb-4 group-hover:scale-110 transition-transform ${color}`}>
         {count}{suffix}
@@ -93,7 +93,7 @@ const ProgressBar: React.FC<{ current: number; goal: number }> = ({ current, goa
       </div>
       <div className="w-full bg-gray-100 rounded-full h-4 overflow-hidden">
         <div
-          className="h-4 rounded-full bg-gradient-to-r from-brand-magenta to-brand-teal transition-all duration-[1500ms] ease-out"
+          className="h-4 rounded-full bg-gradient-to-r from-brand-magenta to-brand-magentaLight transition-all duration-[1500ms] ease-out"
           style={{ width: `${width}%` }}
         />
       </div>
@@ -115,10 +115,11 @@ const Impact: React.FC = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-brand-magentaDark to-brand-magenta text-white py-16 px-4 text-center">
+      <section className="bg-[#1a1a2e] text-white py-20 px-4 text-center">
         <div className="container mx-auto max-w-2xl">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Journey So Far</h1>
-          <p className="text-white/80 text-lg">
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-magentaLight mb-4" style={{fontFamily: "'Poppins', sans-serif"}}>Real Numbers. Real Girls.</p>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Our <span className="gradient-text">Journey</span> So Far</h1>
+          <p className="text-white/70 text-lg font-light">
             Every number below represents a girl whose future looks a little brighter.
           </p>
         </div>
@@ -135,7 +136,7 @@ const Impact: React.FC = () => {
           </div>
 
           {/* Story pull-through */}
-          <div className="bg-gradient-to-br from-brand-surface to-white rounded-3xl p-10 border border-brand-magenta/10 text-center shadow-sm">
+          <div className="bg-[#fdf4f7] rounded-2xl p-10 border border-brand-magenta/10 text-center shadow-sm">
             <p className="text-2xl font-bold text-gray-800 mb-3 leading-snug">
               "I used to think computers were for boys.<br />
               Now I'm building a website for my mother's shop."

@@ -71,7 +71,7 @@ export const IMAGES = {
   // Folder: public/images/about/
   // Recommended: landscape, 800×600px min
   // → Replace with: "/images/about/mission.jpg"
-  ABOUT_MISSION: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=800&auto=format&fit=crop",
+  ABOUT_MISSION: "/images/about/mission.jpg",
 
   // ---------------------------------------------------------------------------
   // APP PAGE — 3 phone mockup screenshots (shown in "Inside the App" section)
@@ -81,25 +81,40 @@ export const IMAGES = {
   // ---------------------------------------------------------------------------
   APP_SCREENSHOTS: [
     {
-      src: "https://images.unsplash.com/photo-1555421689-d68471e189f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-      // → Replace with: "/images/app/screenshot-1.jpg"
-      label: "Home Dashboard",
-      alt: "ShaktiPath app — student dashboard",
-      caption: "Student learning dashboard"
+      src: "/images/app/screenshot-1.jpg",
+      label: "Learning Paths",
+      alt: "ShaktiPath app — learning paths home screen",
+      caption: "4 skill paths, 20+ courses — pick your track and start building"
     },
     {
-      src: "https://images.unsplash.com/photo-1517292987719-0369a794ec0f?q=80&w=400&auto=format&fit=crop",
-      // → Replace with: "/images/app/screenshot-2.jpg"
-      label: "AI Helper",
-      alt: "ShaktiPath app — AI tutor",
-      caption: "AI tutor chat interface"
+      src: "/images/app/screenshot-2.jpg",
+      label: "Lesson View",
+      alt: "ShaktiPath app — Canva design lesson",
+      caption: "Bite-sized lessons with video tutorials and an AI-powered voice tutor in your language"
     },
     {
-      src: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=400&auto=format&fit=crop",
-      // → Replace with: "/images/app/screenshot-3.jpg"
-      label: "Mentor Connect",
-      alt: "ShaktiPath app — mentor connect",
-      caption: "Safe mentor connection screen"
+      src: "/images/app/screenshot-3.jpg",
+      label: "My Progress",
+      alt: "ShaktiPath app — progress tracking with certificates",
+      caption: "Track your points, earn certificates, and see how far you've come"
+    },
+    {
+      src: "/images/app/screenshot-4.jpg",
+      label: "Community",
+      alt: "ShaktiPath app — community circles",
+      caption: "Join circles of learners — Creative Designers, Women Entrepreneurs & more"
+    },
+    {
+      src: "/images/app/screenshot-5.jpg",
+      label: "Career Hub",
+      alt: "ShaktiPath app — AI career tools",
+      caption: "AI-powered tools to build your portfolio, pitch clients, and find work"
+    },
+    {
+      src: "/images/app/screenshot-6.jpg",
+      label: "Settings",
+      alt: "ShaktiPath app — settings and language",
+      caption: "Multilingual & personalised"
     },
   ],
 
@@ -111,40 +126,34 @@ export const IMAGES = {
   // ---------------------------------------------------------------------------
   WORKSHOP_PHOTOS: [
     {
-      src: "https://images.unsplash.com/photo-1577896335608-29bd2a839356?q=80&w=800&auto=format&fit=crop",
-      // → Replace with: "/images/workshops/workshop-1.jpg"
-      alt: "Girls in an AI basics workshop",
-      caption: "AI Basics Workshop — Kalyan School"
+      src: "/images/workshops/workshop-1.jpg",
+      alt: "Elina presenting Career Workshop at Kalyan School",
+      caption: "Career Workshop launch — Kalyan School, India"
     },
     {
-      src: "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800&auto=format&fit=crop",
-      // → Replace with: "/images/workshops/workshop-2.jpg"
-      alt: "Students learning on computers",
-      caption: "Hands-on coding session with 40 students"
+      src: "/images/workshops/workshop-2.jpg",
+      alt: "Elina being felicitated by school management",
+      caption: "Felicitation by school management — Kalyan School, India"
     },
     {
-      src: "https://images.unsplash.com/photo-1529390003868-6c01d73923f8?q=80&w=800&auto=format&fit=crop",
-      // → Replace with: "/images/workshops/workshop-3.jpg"
-      alt: "Girls collaborating on a project",
-      caption: "Teamwork — project presentation day"
+      src: "/images/workshops/workshop-3.jpg",
+      alt: "200+ students engaged at a career awareness session",
+      caption: "200+ students engaged at a career awareness session"
     },
     {
-      src: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=800&auto=format&fit=crop",
-      // → Replace with: "/images/workshops/workshop-4.jpg"
-      alt: "Mentor with students",
-      caption: "One-on-one mentor session — Ambernath pilot"
+      src: "/images/workshops/workshop-4.jpg",
+      alt: "Girls working on computers in a computer lab",
+      caption: "Hands-on computer lab session — Kalyan School, India"
     },
     {
-      src: "https://images.unsplash.com/photo-1517842645767-c639042777db?q=80&w=800&auto=format&fit=crop",
-      // → Replace with: "/images/workshops/workshop-5.jpg"
-      alt: "Certificate distribution ceremony",
-      caption: "Certificate distribution — Cohort 1 graduation"
+      src: "/images/workshops/workshop-5.jpg",
+      alt: "Elina mentoring students individually",
+      caption: "Founder Elina mentoring students individually"
     },
     {
-      src: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop",
-      // → Replace with: "/images/workshops/workshop-6.jpg"
-      alt: "Students working together",
-      caption: "Community study group — student-led initiative"
+      src: "/images/workshops/workshop-6.jpg",
+      alt: "Students exploring ShaktiPath app on screen",
+      caption: "Live demo of the ShaktiPath app — Kalyan School, India"
     },
   ],
 

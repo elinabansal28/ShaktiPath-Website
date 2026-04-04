@@ -65,11 +65,12 @@ const Programs: React.FC = () => {
   ];
 
   return (
-    <div className="bg-brand-surface min-h-screen py-16">
+    <div className="bg-[#fdf4f7] min-h-screen py-16">
        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-16">
-             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Curriculum for <span className="text-brand-magentaDark">Real Impact</span></h1>
-             <p className="text-lg text-gray-600">Our programs are modular, practical, and designed for the specific context of semi-urban India.</p>
+             <p className="text-xs font-bold uppercase tracking-[0.18em] text-brand-magenta mb-3" style={{fontFamily: "'Poppins', sans-serif"}}>Our Programs</p>
+             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Curriculum for <span className="gradient-text">Real Impact</span></h1>
+             <p className="text-lg text-gray-500">Our programs are modular, practical, and designed for the specific context of semi-urban India.</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

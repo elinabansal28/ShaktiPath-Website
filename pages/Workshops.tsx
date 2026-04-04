@@ -52,10 +52,10 @@ const Workshops: React.FC = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center max-w-4xl">
           <p className="text-overline text-brand-magenta mb-4 uppercase tracking-widest text-xs font-bold">In Action</p>
           <h1 className="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6 leading-tight tracking-tight">
-            Our Workshops
+            Our <span className="gradient-text">Workshops</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-500 leading-relaxed font-light max-w-2xl mx-auto">
-            Real girls. Real skills. Real impact. A glimpse into what happens when we show up in a community.
+            Real girls. <span className="text-brand-magentaDark font-semibold">Real skills.</span> Real impact.
           </p>
         </div>
       </section>
@@ -88,7 +88,7 @@ const Workshops: React.FC = () => {
       </section>
 
       {/* Stats strip */}
-      <section className="py-12 bg-brand-surface">
+      <section className="py-12 bg-[#fdf4f7]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
           <div className="grid grid-cols-3 gap-8 text-center">
             {[

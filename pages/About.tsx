@@ -26,61 +26,58 @@ const About: React.FC = () => {
     <div className="bg-white">
 
       {/* Hero */}
-      <section className="relative bg-brand-magenta/5 overflow-hidden min-h-[580px] flex items-center">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-xl py-12 md:py-20">
-            <p className="text-overline text-brand-magenta mb-3">Our Story</p>
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">Who We Are</h1>
-            <p className="text-xl text-gray-700 leading-relaxed mb-8">
-              At ShaktiPath, we don't just provide charity; we build capability. We are a team of technologists and mentors driven by a single, urgent mission: empowering girls in underserved communities to reclaim their futures.
-            </p>
-            <div className="flex flex-wrap gap-3">
-              <Link to="/get-involved" className="bg-brand-magenta text-white px-6 py-3 rounded-full font-bold text-sm hover:bg-brand-magentaDark transition-colors shadow-md">
-                Join Our Mission
-              </Link>
-              <Link to="/impact" className="border-2 border-brand-magenta text-brand-magenta px-6 py-3 rounded-full font-bold text-sm hover:bg-brand-magenta hover:text-white transition-colors">
-                See Our Impact
-              </Link>
-            </div>
-          </div>
-        </div>
+      <section className="relative bg-gradient-to-br from-brand-magenta/8 via-brand-surface to-white overflow-hidden py-24 md:py-32">
+        {/* Decorative blobs */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-brand-magenta/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none" />
+        <div className="absolute bottom-0 left-0 w-64 h-64 bg-brand-teal/8 rounded-full blur-2xl translate-y-1/2 -translate-x-1/2 pointer-events-none" />
 
-        {/* Slanted image panel */}
-        <div className="absolute top-0 right-0 w-full md:w-[55%] h-full hidden md:block">
-          <div className="absolute inset-0 transform -skew-x-12 origin-top-left overflow-hidden z-10">
-            <img
-              src={IMAGES.ABOUT_TEAM}
-              alt="Girls learning together in India"
-              className="w-full h-full object-cover transform skew-x-12 scale-125 origin-top-left"
-            />
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center max-w-3xl">
+          <p className="text-overline text-brand-magenta mb-4 uppercase tracking-widest text-xs font-bold">Our Story</p>
+          <h1 className="text-5xl md:text-7xl font-extrabold text-gray-900 mb-6 leading-tight tracking-tight">Who <span className="gradient-text">We Are</span></h1>
+          <p className="text-xl md:text-2xl text-gray-600 leading-relaxed mb-10 font-light">
+            At ShaktiPath, we don't just provide charity — we build <strong className="text-brand-magentaDark font-bold">capability</strong>. A team of technologists and mentors driven by one urgent mission: empowering girls in underserved communities to reclaim their futures.
+          </p>
+          <div className="flex flex-wrap gap-3 justify-center">
+            <Link to="/get-involved" className="bg-brand-magenta text-white px-8 py-3.5 rounded-full font-bold text-sm hover:bg-brand-magentaDark transition-colors shadow-lg shadow-brand-magenta/25">
+              Join Our Mission
+            </Link>
+            <Link to="/impact" className="border-2 border-brand-magenta text-brand-magenta px-8 py-3.5 rounded-full font-bold text-sm hover:bg-brand-magenta hover:text-white transition-colors">
+              See Our Impact
+            </Link>
           </div>
         </div>
       </section>
 
       {/* Founder */}
-      <section className="py-20 bg-brand-surface">
+      <section className="py-20 bg-[#fdf4f7]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <p className="text-overline text-brand-magenta mb-2">The Person Behind the Mission</p>
-            <h2 className="text-3xl font-bold text-gray-900">Meet the Founder</h2>
+            <h2 className="text-3xl font-bold text-gray-900">Meet the <span className="gradient-text">Founder</span></h2>
           </div>
 
-          <div className="flex flex-col md:flex-row items-center gap-12 max-w-5xl mx-auto">
-            {/* Avatar */}
-            <div className="w-full md:w-1/3 flex justify-center md:justify-end shrink-0">
+          <div className="flex flex-col md:flex-row items-center gap-14 max-w-5xl mx-auto">
+            {/* Founder Photo */}
+            <div className="w-full md:w-2/5 flex justify-center md:justify-end shrink-0">
               <div className="relative">
-                <div className="w-60 h-60 rounded-2xl overflow-hidden shadow-xl border-4 border-white ring-4 ring-brand-magenta/20 bg-gradient-to-br from-brand-magenta to-brand-magentaDark flex items-center justify-center">
-                  {/* Replace this div with <img src="/images/about/elina.jpg" .../> once you have the photo */}
-                  <span className="text-7xl font-bold text-white select-none">EB</span>
+                <div className="w-full max-w-sm md:max-w-none md:w-80 h-96 rounded-3xl overflow-hidden shadow-2xl border-4 border-white ring-4 ring-brand-magenta/20">
+                  <img
+                    src={IMAGES.ABOUT_TEAM}
+                    alt="Elina Bansal — Founder of ShaktiPath"
+                    className="w-full h-full object-cover object-top"
+                  />
                 </div>
                 <div className="absolute -bottom-4 -right-4 bg-brand-magenta text-white px-4 py-2 rounded-xl text-xs font-bold shadow-lg whitespace-nowrap">
                   Founder & CEO
                 </div>
+                {/* Decorative dot pattern */}
+                <div className="absolute -top-4 -left-4 w-24 h-24 opacity-20 -z-10"
+                  style={{ backgroundImage: 'radial-gradient(circle, #be185d 1.5px, transparent 1.5px)', backgroundSize: '8px 8px' }} />
               </div>
             </div>
 
             {/* Bio */}
-            <div className="w-full md:w-2/3 text-center md:text-left">
+            <div className="w-full md:w-3/5 text-center md:text-left">
               <h3 className="text-2xl font-bold text-brand-magenta mb-3">Elina Bansal</h3>
               <div className="flex flex-wrap gap-2 mb-5 justify-center md:justify-start">
                 {['Published Author', 'AI Educator', 'Based in Singapore'].map(tag => (
@@ -106,7 +103,7 @@ const About: React.FC = () => {
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {values.map((v, i) => (
-              <div key={i} className="bg-brand-surface rounded-3xl p-8 flex flex-col items-center text-center hover:shadow-lg transition-shadow">
+              <div key={i} className="bg-[#fdf4f7] rounded-2xl p-8 flex flex-col items-center text-center hover:shadow-md transition-shadow border border-brand-magenta/10">
                 <div className="w-14 h-14 rounded-2xl bg-brand-magenta/10 text-brand-magentaDark flex items-center justify-center mb-5">
                   {v.icon}
                 </div>
@@ -119,7 +116,7 @@ const About: React.FC = () => {
       </section>
 
       {/* Mission — image + text */}
-      <section className="py-20 bg-brand-surface">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="w-full md:w-1/2">
@@ -133,7 +130,7 @@ const About: React.FC = () => {
             </div>
             <div className="w-full md:w-1/2">
               <p className="text-overline text-brand-magenta mb-3">Why We Exist</p>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Mission</h2>
+              <h2 className="text-4xl font-bold text-gray-900 mb-6">Our <span className="gradient-text">Mission</span></h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
                 We believe that literacy alone is not enough to empower a girl — especially when a girl's education is still considered an "expense" and not an "investment". We're committed to exposing girls in underserved areas to marketable, cashable skills while they're still studying, enabling them to earn via side gigs and self-fund their education — leading to a sustainable career.
               </p>
