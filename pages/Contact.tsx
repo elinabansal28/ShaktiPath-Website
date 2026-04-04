@@ -90,7 +90,7 @@ const Contact: React.FC = () => {
             <p className="text-sm text-gray-500">Kalyan, Maharashtra, India</p>
           </div>
           <div className="bg-white p-6 rounded-2xl text-center shadow-sm">
-            <Phone className="mx-auto text-brand-teal mb-4" size={32} />
+            <Phone className="mx-auto text-brand-magenta mb-4" size={32} />
             <h3 className="font-bold mb-2">WhatsApp</h3>
             <p className="text-sm text-gray-500">hello@shaktipath.org</p>
           </div>

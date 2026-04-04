@@ -46,13 +46,11 @@ const Home: React.FC = () => {
               style={{ backgroundImage: `url(${slide.image})` }}
             />
             {/* Clean dark overlay — no colour tint competing with photo */}
-            <div className="absolute inset-0 bg-black/45" />
-            <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/20 to-transparent" />
+            <div className="absolute inset-0 bg-black/28" />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/45 via-black/15 to-transparent" />
 
             <div className="absolute inset-0 container mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center">
               <div className="max-w-2xl space-y-6">
-                {/* Overline */}
-                <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-teal">ShaktiPath · Maharashtra, India</p>
                 <h1 className="text-4xl lg:text-[3.5rem] font-extrabold leading-[1.08] tracking-tight text-white drop-shadow-md" style={{fontFamily: "'Playfair Display', serif"}}>
                   {slide.titleWhite}
                   <span className="text-brand-yellow">{slide.titleAccent}</span>
@@ -85,7 +83,7 @@ const Home: React.FC = () => {
             <button
               key={idx}
               onClick={() => setCurrentHeroIndex(idx)}
-              className={`h-1 rounded-full transition-all duration-400 ${idx === currentHeroIndex ? 'w-10 bg-brand-teal' : 'w-3 bg-white/40 hover:bg-white/70'}`}
+              className={`h-1 rounded-full transition-all duration-400 ${idx === currentHeroIndex ? 'w-10 bg-brand-magenta' : 'w-3 bg-white/40 hover:bg-white/70'}`}
               aria-label={`Go to slide ${idx + 1}`}
             />
           ))}
@@ -159,7 +157,7 @@ const Home: React.FC = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
           <div className="text-center mb-12">
             <p className="text-xs font-bold uppercase tracking-[0.18em] text-brand-magenta mb-3" style={{fontFamily: "'Poppins', sans-serif"}}>In Their Own Words</p>
-            <h2 className="text-3xl font-extrabold text-gray-900">Transformation Stories</h2>
+            <h2 className="text-3xl font-extrabold text-gray-900">Transformation <span className="gradient-text">Stories</span></h2>
           </div>
 
           {/* Editorial quote card */}
@@ -223,15 +221,15 @@ const Home: React.FC = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <div className="lg:w-1/2 space-y-6">
-              <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-teal">The Tech Layer</p>
-              <h2 className="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight">Meet the ShaktiPath App.</h2>
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-magentaLight">The Tech Layer</p>
+              <h2 className="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight">Meet the ShaktiPath <span className="gradient-text">App.</span></h2>
               <p className="text-white/75 text-lg leading-relaxed font-light">
                 Learning doesn't stop when the workshop ends. Our low-bandwidth mobile companion helps girls practice AI prompts, track projects, and connect with mentors safely from home.
               </p>
               <ul className="space-y-3">
                 {['Designed for low-data environments', 'Safe, moderated mentor connections', 'Offline-first learning modules'].map(item => (
                   <li key={item} className="flex items-center gap-3 text-white/85">
-                    <div className="w-1.5 h-1.5 rounded-full bg-brand-teal shrink-0" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-brand-magenta shrink-0" />
                     <span className="font-medium text-sm">{item}</span>
                   </li>
                 ))}
@@ -258,7 +256,7 @@ const Home: React.FC = () => {
                         <span className="bg-white/20 px-2 py-0.5 rounded text-[10px]">In Progress</span>
                       </div>
                       <div className="w-full bg-black/10 rounded-full h-1.5 mt-2">
-                        <div className="bg-brand-teal w-2/3 h-1.5 rounded-full shadow-[0_0_10px_rgba(0,229,255,0.5)]" />
+                        <div className="bg-brand-magentaLight w-2/3 h-1.5 rounded-full shadow-[0_0_10px_rgba(212,24,92,0.4)]" />
                       </div>
                       <p className="text-[10px] mt-3 opacity-90">Lesson 3: Writing Prompts</p>
                     </div>
@@ -270,8 +268,8 @@ const Home: React.FC = () => {
                         <span className="text-xs font-bold text-gray-600">Lessons</span>
                       </div>
                       <div className="bg-white p-4 rounded-2xl shadow-sm border border-white hover:border-brand-magentaLight/30 flex flex-col items-center py-5 hover:bg-brand-surface transition-colors cursor-pointer">
-                        <div className="p-2 bg-brand-teal/10 rounded-full mb-2">
-                          <Users className="text-brand-teal" size={20} />
+                        <div className="p-2 bg-brand-magenta/10 rounded-full mb-2">
+                          <Users className="text-brand-magenta" size={20} />
                         </div>
                         <span className="text-xs font-bold text-gray-600">Mentor</span>
                       </div>

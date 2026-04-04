@@ -29,13 +29,13 @@ const About: React.FC = () => {
       <section className="relative bg-gradient-to-br from-brand-magenta/8 via-brand-surface to-white overflow-hidden py-24 md:py-32">
         {/* Decorative blobs */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-brand-magenta/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none" />
-        <div className="absolute bottom-0 left-0 w-64 h-64 bg-brand-teal/8 rounded-full blur-2xl translate-y-1/2 -translate-x-1/2 pointer-events-none" />
+        <div className="absolute bottom-0 left-0 w-64 h-64 bg-brand-magenta/5 rounded-full blur-2xl translate-y-1/2 -translate-x-1/2 pointer-events-none" />
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center max-w-3xl">
           <p className="text-overline text-brand-magenta mb-4 uppercase tracking-widest text-xs font-bold">Our Story</p>
           <h1 className="text-5xl md:text-7xl font-extrabold text-gray-900 mb-6 leading-tight tracking-tight">Who <span className="gradient-text">We Are</span></h1>
           <p className="text-xl md:text-2xl text-gray-600 leading-relaxed mb-10 font-light">
-            At ShaktiPath, we don't just provide charity — we build <strong className="text-brand-magentaDark font-bold">capability</strong>. A team of technologists and mentors driven by one urgent mission: empowering girls in underserved communities to reclaim their futures.
+            At ShaktiPath, we don't just provide charity — we build <span className="gradient-text font-bold">capability</span>. A team of technologists and mentors driven by one urgent mission: empowering girls in underserved communities to reclaim their futures.
           </p>
           <div className="flex flex-wrap gap-3 justify-center">
             <Link to="/get-involved" className="bg-brand-magenta text-white px-8 py-3.5 rounded-full font-bold text-sm hover:bg-brand-magentaDark transition-colors shadow-lg shadow-brand-magenta/25">

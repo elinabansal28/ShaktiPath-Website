@@ -107,7 +107,7 @@ const ProgressBar: React.FC<{ current: number; goal: number }> = ({ current, goa
 const Impact: React.FC = () => {
   const stats: StatCardProps[] = [
     { number: 200, suffix: '+', title: 'Girls Mentored', desc: "In Maharashtra's underserved areas.", color: 'text-brand-magentaDark' },
-    { number: 5, suffix: '+', title: 'Hands-On Workshops', desc: 'Conducted across local schools.', color: 'text-brand-teal' },
+    { number: 5, suffix: '+', title: 'Hands-On Workshops', desc: 'Conducted across local schools.', color: 'text-brand-magenta' },
     { number: 2, suffix: '', title: 'Pilot Schools Engaged', desc: 'With 100% high school girls population.', color: 'text-purple-600' },
     { number: 20, suffix: '+', title: 'Teachers Enabled', desc: 'Equipped with our specialized curriculum and the ShaktiPath mobile app.', color: 'text-amber-500' },
   ];

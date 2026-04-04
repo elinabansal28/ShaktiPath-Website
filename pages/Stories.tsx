@@ -21,7 +21,7 @@ const stories = [
     quote: 'I wrote a prompt that helped my teacher explain photosynthesis better. She asked me to teach the class.',
     detail: 'Sarita discovered AI tools through ShaktiPath\'s AI literacy module. She now runs a study-group in her school where she teaches juniors how to use AI safely for their homework.',
     initials: 'S',
-    color: 'from-brand-teal to-cyan-600',
+    color: 'from-brand-magenta to-purple-600',
   },
   {
     name: 'Ranjana',

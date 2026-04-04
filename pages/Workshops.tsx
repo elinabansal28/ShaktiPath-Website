@@ -47,7 +47,7 @@ const Workshops: React.FC = () => {
       <section className="relative py-24 bg-gradient-to-br from-brand-surface via-white to-brand-surface overflow-hidden">
         {/* Decorative blob */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-brand-magenta/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
-        <div className="absolute bottom-0 left-0 w-64 h-64 bg-brand-teal/5 rounded-full blur-2xl translate-y-1/2 -translate-x-1/2" />
+        <div className="absolute bottom-0 left-0 w-64 h-64 bg-brand-magenta/5 rounded-full blur-2xl translate-y-1/2 -translate-x-1/2" />
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center max-w-4xl">
           <p className="text-overline text-brand-magenta mb-4 uppercase tracking-widest text-xs font-bold">In Action</p>
