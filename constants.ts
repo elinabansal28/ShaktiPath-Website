@@ -26,22 +26,19 @@ export const IMAGES = {
   // ---------------------------------------------------------------------------
   HOME_HERO: [
     {
-      image: "https://images.unsplash.com/photo-1577896335608-29bd2a839356?q=80&w=1600&auto=format&fit=crop",
-      // → Replace with: "/images/hero/hero-1.jpg"
+      image: "/images/hero/hero-1.jpg",
       titleWhite: "A Move",
       titleAccent: " beyond textbooks",
       description: "Empowering high school girls with marketable Digital / AI skills at an early age."
     },
     {
-      image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
-      // → Replace with: "/images/hero/hero-2.jpg"
+      image: "/images/hero/hero-2.jpg",
       titleWhite: "Shifting the Northstar from \u201cLiteracy\u201d to",
       titleAccent: " \u201cCareer building\u201d",
       description: "Helping them realise their potential through side-hustles/digital gigs. Making them Job-ready"
     },
     {
-      image: "https://images.unsplash.com/photo-1529390003868-6c01d73923f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
-      // → Replace with: "/images/hero/hero-3.jpg"
+      image: "/images/hero/hero-3.jpg",
       titleWhite: "We create Learners",
       titleAccent: " and Earners",
       description: "Enabling them to complete their education and build sustainable career"
@@ -61,8 +58,7 @@ export const IMAGES = {
   // Folder: public/images/why/
   // Recommended: landscape, 1000×700px min
   // ---------------------------------------------------------------------------
-  WHY_HERO: "https://images.unsplash.com/photo-1615967675239-012581691458?q=80&w=1000&auto=format&fit=crop",
-  // → Replace with: "/images/why/why-hero.jpg"
+  WHY_HERO: "/images/why/why-hero.jpg",
 
   // ---------------------------------------------------------------------------
   // ABOUT PAGE — team / founder photo
@@ -71,6 +67,10 @@ export const IMAGES = {
   // ---------------------------------------------------------------------------
   ABOUT_TEAM: "https://images.unsplash.com/photo-1529209074137-c6bce7188f6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80",
   // → Replace with: "/images/about/team.jpg"
+
+  // About page — mission section image (girls learning / workshop)
+  // → Replace with: "/images/about/mission.jpg"
+  ABOUT_MISSION: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=800&auto=format&fit=crop",
 
   // ---------------------------------------------------------------------------
   // APP PAGE — hero banner
