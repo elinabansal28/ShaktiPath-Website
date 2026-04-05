@@ -167,26 +167,12 @@ const About: React.FC = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="w-full md:w-1/2">
-              <div className="relative rounded-3xl overflow-hidden shadow-xl">
+              <div className="rounded-3xl overflow-hidden shadow-xl">
                 <img
                   src={IMAGES.ABOUT_MISSION}
                   alt="Girls mentoring and learning digital skills"
                   className="w-full h-[380px] object-cover hover:scale-105 transition-transform duration-700"
                 />
-                {/* Job role badges overlay */}
-                <div className="absolute inset-0 pointer-events-none">
-                  {[
-                    { label: 'Content Creator',      pos: 'top-4 left-4' },
-                    { label: 'Video Editor',         pos: 'top-4 right-4' },
-                    { label: 'Podcast Manager',      pos: 'top-1/2 left-4 -translate-y-1/2' },
-                    { label: 'Social Media Assistant',   pos: 'bottom-4 left-4' },
-                    { label: 'UX Writer',            pos: 'bottom-4 right-4' },
-                  ].map(({ label, pos }) => (
-                    <span key={label} className={`absolute ${pos} bg-white/90 backdrop-blur-sm text-brand-magentaDark text-xs font-bold px-3 py-1.5 rounded-full shadow-md`}>
-                      {label}
-                    </span>
-                  ))}
-                </div>
               </div>
             </div>
             <div className="w-full md:w-1/2">
