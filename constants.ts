@@ -70,8 +70,8 @@ export const IMAGES = {
   // About page — mission section image (left side of Mission block)
   // Folder: public/images/about/
   // Recommended: landscape, 800×600px min
-  // → Replace with: "/images/about/mission.jpg"
-  ABOUT_MISSION: "/images/about/mission.jpg",
+  // → Replace with: "/images/about/mission.PNG"
+  ABOUT_MISSION: "/images/about/mission.PNG",
 
   // ---------------------------------------------------------------------------
   // APP PAGE — 3 phone mockup screenshots (shown in "Inside the App" section)
