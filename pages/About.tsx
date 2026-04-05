@@ -55,7 +55,7 @@ const About: React.FC = () => {
             <div className="w-full lg:w-1/2">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-brand-magenta/20 aspect-video">
                 <iframe
-                  src="https://www.youtube-nocookie.com/embed/kPd62--P8-w?rel=0&modestbranding=1"
+                  src="https://www.youtube.com/embed/kPd62--P8-w?rel=0&modestbranding=1"
                   title="Elina Bansal — ShaktiPath Initiative"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
