@@ -134,7 +134,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* ── APP SECTION ─────────────────────────────────────────────────────── */}
-      <section className="py-20 bg-[#1a1a2e] text-white overflow-hidden relative">
+      <section className="py-14 bg-[#1a1a2e] text-white overflow-hidden relative">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <div className="lg:w-1/2 space-y-6">

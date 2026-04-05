@@ -87,7 +87,7 @@ const About: React.FC = () => {
             <div className="flex flex-col md:flex-row items-center gap-0">
 
               {/* Certificate image */}
-              <div className="w-full md:w-2/5 bg-[#fdf4f7] flex items-center justify-center p-8">
+              <div className="w-full md:w-1/2 bg-[#fdf4f7] flex items-center justify-center p-3">
                 <div className="relative">
                   <div className="rounded-3xl overflow-hidden shadow-2xl border-4 border-white ring-4 ring-brand-magenta/20 w-full">
                     <img
@@ -100,7 +100,7 @@ const About: React.FC = () => {
               </div>
 
               {/* Text */}
-              <div className="w-full md:w-3/5 p-8 md:p-10">
+              <div className="w-full md:w-1/2 p-8 md:p-10">
                 <p className="text-xs font-bold uppercase tracking-widest text-brand-magenta mb-2">Recognition</p>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Named Top 16 Finalist at <span className="gradient-text">GYC 2026</span></h3>
                 <p className="text-gray-600 leading-relaxed mb-6">
@@ -179,7 +179,7 @@ const About: React.FC = () => {
                     { label: 'Content Creator',      pos: 'top-4 left-4' },
                     { label: 'Video Editor',         pos: 'top-4 right-4' },
                     { label: 'Podcast Manager',      pos: 'top-1/2 left-4 -translate-y-1/2' },
-                    { label: 'Social Media Asst.',   pos: 'bottom-4 left-4' },
+                    { label: 'Social Media Assistant',   pos: 'bottom-4 left-4' },
                     { label: 'UX Writer',            pos: 'bottom-4 right-4' },
                   ].map(({ label, pos }) => (
                     <span key={label} className={`absolute ${pos} bg-white/90 backdrop-blur-sm text-brand-magentaDark text-xs font-bold px-3 py-1.5 rounded-full shadow-md`}>
