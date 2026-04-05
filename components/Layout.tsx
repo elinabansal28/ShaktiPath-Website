@@ -81,7 +81,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     <div className="flex flex-col min-h-screen font-sans bg-white">
 
       {/* Top Banner — gradient strip */}
-      <div className="bg-gradient-to-r from-brand-navy via-brand-magentaDark to-brand-navy text-white text-sm py-2.5 px-4 text-center">
+      <div className="bg-gradient-to-r from-brand-navy via-brand-magentaDark to-brand-navy text-white text-sm py-4 px-4 text-center">
         <span className="opacity-90">🥈 ShaktiPath wins </span>
         <span className="font-bold">Silver Award</span>
         <span className="opacity-90"> at Global Youth Conference 2026 — AI &amp; Future of Work. </span>
@@ -284,7 +284,6 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                   { label: 'Volunteer', to: '/get-involved' },
                   { label: 'Become a Mentor', to: '/get-involved' },
                   { label: 'Partner with Us', to: '/get-involved' },
-                  { label: 'Donate / Sponsor', to: '/donate' },
                   { label: 'Events', to: '/events' },
                   { label: 'FAQ', to: '/faq' },
                 ].map(l => (

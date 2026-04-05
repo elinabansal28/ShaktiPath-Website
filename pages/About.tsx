@@ -160,28 +160,7 @@ const About: React.FC = () => {
         </div>
       </section>
 
-      {/* ── 4. VALUES ────────────────────────────────────────────────────── */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-          <div className="text-center mb-12">
-            <p className="text-overline text-brand-magenta mb-2">What We Stand For</p>
-            <h2 className="text-3xl font-bold text-gray-900">Our Core Values</h2>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            {values.map((v, i) => (
-              <div key={i} className="bg-[#fdf4f7] rounded-2xl p-8 flex flex-col items-center text-center hover:shadow-md transition-shadow border border-brand-magenta/10">
-                <div className="w-14 h-14 rounded-2xl bg-brand-magenta/10 text-brand-magentaDark flex items-center justify-center mb-5">
-                  {v.icon}
-                </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-3">{v.title}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{v.text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── 5. MISSION ───────────────────────────────────────────────────── */}
+      {/* ── 4. MISSION ───────────────────────────────────────────────────── */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
           <div className="flex flex-col md:flex-row items-center gap-12">
@@ -204,6 +183,27 @@ const About: React.FC = () => {
                 Why this matters <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── 5. VALUES ────────────────────────────────────────────────────── */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+          <div className="text-center mb-12">
+            <p className="text-overline text-brand-magenta mb-2">What We Stand For</p>
+            <h2 className="text-3xl font-bold text-gray-900">Our Core Values</h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {values.map((v, i) => (
+              <div key={i} className="bg-[#fdf4f7] rounded-2xl p-8 flex flex-col items-center text-center hover:shadow-md transition-shadow border border-brand-magenta/10">
+                <div className="w-14 h-14 rounded-2xl bg-brand-magenta/10 text-brand-magentaDark flex items-center justify-center mb-5">
+                  {v.icon}
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-3">{v.title}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">{v.text}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

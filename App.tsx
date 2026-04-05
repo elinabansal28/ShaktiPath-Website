@@ -16,7 +16,6 @@ import NotFound from './pages/NotFound';
 import FAQ from './pages/FAQ';
 import Gallery from './pages/Gallery';
 import Events from './pages/Events';
-import Donate from './pages/Donate';
 import Workshops from './pages/Workshops';
 
 const App: React.FC = () => {
@@ -40,7 +39,6 @@ const App: React.FC = () => {
           <Route path="/faq" element={<FAQ />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/events" element={<Events />} />
-          <Route path="/donate" element={<Donate />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
