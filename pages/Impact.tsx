@@ -161,7 +161,7 @@ const Impact: React.FC = () => {
               <div>
                 <div className="relative rounded-2xl overflow-hidden shadow-xl ring-2 ring-brand-magenta/15 aspect-video">
                   <iframe
-                    src="https://www.youtube-nocookie.com/embed/3h8pGSzDpe0?rel=0&modestbranding=1"
+                    src="https://www.youtube.com/embed/3h8pGSzDpe0?rel=0&modestbranding=1"
                     title="Student Testimonial — ShaktiPath"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
@@ -174,7 +174,7 @@ const Impact: React.FC = () => {
               <div>
                 <div className="relative rounded-2xl overflow-hidden shadow-xl ring-2 ring-brand-magenta/15 aspect-video">
                   <iframe
-                    src="https://www.youtube-nocookie.com/embed/mwk3EaQER0Y?rel=0&modestbranding=1"
+                    src="https://www.youtube.com/embed/mwk3EaQER0Y?rel=0&modestbranding=1"
                     title="Teacher Testimonial — ShaktiPath"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
