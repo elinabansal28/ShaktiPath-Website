@@ -25,56 +25,12 @@ const About: React.FC = () => {
   return (
     <div className="bg-white">
 
-      {/* Hero */}
-      <section className="relative bg-gradient-to-br from-brand-magenta/8 via-brand-surface to-white overflow-hidden py-24 md:py-32">
-        {/* Decorative blobs */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-brand-magenta/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none" />
-        <div className="absolute bottom-0 left-0 w-64 h-64 bg-brand-magenta/5 rounded-full blur-2xl translate-y-1/2 -translate-x-1/2 pointer-events-none" />
-
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-6xl">
-          <div className="flex flex-col lg:flex-row items-center gap-12">
-
-            {/* Text — left */}
-            <div className="w-full lg:w-1/2 text-center lg:text-left">
-              <p className="text-overline text-brand-magenta mb-4 uppercase tracking-widest text-xs font-bold">Our Story</p>
-              <h1 className="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6 leading-tight tracking-tight">Who <span className="gradient-text">We Are</span></h1>
-              <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-10 font-light">
-                At ShaktiPath, we don't just provide charity — we build <span className="gradient-text font-bold">capability</span>. A team of technologists and mentors driven by one urgent mission: empowering girls in underserved communities to reclaim their futures.
-              </p>
-              <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
-                <Link to="/get-involved" className="bg-brand-magenta text-white px-8 py-3.5 rounded-full font-bold text-sm hover:bg-brand-magentaDark transition-colors shadow-lg shadow-brand-magenta/25">
-                  Join Our Mission
-                </Link>
-                <Link to="/impact" className="border-2 border-brand-magenta text-brand-magenta px-8 py-3.5 rounded-full font-bold text-sm hover:bg-brand-magenta hover:text-white transition-colors">
-                  See Our Impact
-                </Link>
-              </div>
-            </div>
-
-            {/* Video — right */}
-            <div className="w-full lg:w-1/2">
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-brand-magenta/20 aspect-video">
-                <iframe
-                  src="https://www.youtube.com/embed/kPd62--P8-w?rel=0&modestbranding=1"
-                  title="Elina Bansal — ShaktiPath Initiative"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="w-full h-full"
-                />
-              </div>
-              <p className="text-center text-xs text-gray-400 mt-3 font-medium">Elina Bansal, Founder — explaining the ShaktiPath mission</p>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* Founder */}
+      {/* ── 1. MEET THE FOUNDER — Hero section ───────────────────────────── */}
       <section className="py-20 bg-[#fdf4f7]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <p className="text-overline text-brand-magenta mb-2">The Person Behind the Mission</p>
-            <h2 className="text-3xl font-bold text-gray-900">Meet the <span className="gradient-text">Founder</span></h2>
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900">Meet the <span className="gradient-text">Founder</span></h1>
           </div>
 
           <div className="flex flex-col md:flex-row items-center gap-14 max-w-5xl mx-auto">
@@ -121,49 +77,90 @@ const About: React.FC = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* GYC Recognition — certificate + links */}
-          <div className="mt-16 max-w-5xl mx-auto">
-            <div className="bg-white rounded-3xl border border-brand-magenta/10 shadow-sm overflow-hidden">
-              <div className="flex flex-col md:flex-row items-center gap-0">
+      {/* ── 2. RECOGNITION ───────────────────────────────────────────────── */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+          <div className="bg-white rounded-3xl border border-brand-magenta/10 shadow-sm overflow-hidden">
+            <div className="flex flex-col md:flex-row items-center gap-0">
 
-                {/* Certificate image */}
-                <div className="w-full md:w-2/5 bg-[#fdf4f7] flex items-center justify-center p-8">
-                  <div className="rounded-2xl overflow-hidden shadow-lg border border-amber-100 w-full max-w-xs">
-                    <img
-                      src="/gyc-certificate.png"
-                      alt="GYC 2026 Silver Award Certificate — Elina Bansal, ShaktiPath"
-                      className="w-full h-auto object-contain"
-                    />
-                  </div>
+              {/* Certificate image */}
+              <div className="w-full md:w-2/5 bg-[#fdf4f7] flex items-center justify-center p-8">
+                <div className="rounded-2xl overflow-hidden shadow-lg border border-amber-100 w-full max-w-xs">
+                  <img
+                    src="/gyc-certificate.png"
+                    alt="GYC 2026 Silver Award Certificate — Elina Bansal, ShaktiPath"
+                    className="w-full h-auto object-contain"
+                  />
                 </div>
-
-                {/* Text */}
-                <div className="w-full md:w-3/5 p-8 md:p-10">
-                  <p className="text-xs font-bold uppercase tracking-widest text-brand-magenta mb-2">Recognition</p>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Named Top 16 Finalist at <span className="gradient-text">GYC 2026</span></h3>
-                  <p className="text-gray-600 leading-relaxed mb-6">
-                    Elina was selected as a Top 16 Finalist at the Global Youth Conference 2026 and awarded the <strong>Silver Award</strong> in the <em>AI &amp; Future of Work</em> track — recognising ShaktiPath's impact on digital empowerment for underserved communities in India.
-                  </p>
-                  <div className="flex flex-wrap gap-3">
-                    <a href="https://theglobalyouth.org/gyc-2026-finalists" target="_blank" rel="noopener noreferrer"
-                       className="inline-flex items-center gap-2 bg-brand-magenta text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-brand-magentaDark transition-colors shadow-md">
-                      See Finalists Page
-                    </a>
-                    <a href="https://theglobalyouth.org/home" target="_blank" rel="noopener noreferrer"
-                       className="inline-flex items-center gap-2 border-2 border-brand-magenta text-brand-magenta px-6 py-2.5 rounded-full text-sm font-bold hover:bg-brand-magenta hover:text-white transition-colors">
-                      GYC Website
-                    </a>
-                  </div>
-                </div>
-
               </div>
+
+              {/* Text */}
+              <div className="w-full md:w-3/5 p-8 md:p-10">
+                <p className="text-xs font-bold uppercase tracking-widest text-brand-magenta mb-2">Recognition</p>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Named Top 16 Finalist at <span className="gradient-text">GYC 2026</span></h3>
+                <p className="text-gray-600 leading-relaxed mb-6">
+                  Elina was selected as a Top 16 Finalist at the Global Youth Conference 2026 and awarded the <strong>Silver Award</strong> in the <em>AI &amp; Future of Work</em> track — recognising ShaktiPath's impact on digital empowerment for underserved communities in India.
+                </p>
+                <div className="flex flex-wrap gap-3">
+                  <a href="https://theglobalyouth.org/gyc-2026-finalists" target="_blank" rel="noopener noreferrer"
+                     className="inline-flex items-center gap-2 bg-brand-magenta text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-brand-magentaDark transition-colors shadow-md">
+                    See Finalists Page
+                  </a>
+                  <a href="https://theglobalyouth.org/home" target="_blank" rel="noopener noreferrer"
+                     className="inline-flex items-center gap-2 border-2 border-brand-magenta text-brand-magenta px-6 py-2.5 rounded-full text-sm font-bold hover:bg-brand-magenta hover:text-white transition-colors">
+                    GYC Website
+                  </a>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
       </section>
 
-      {/* Values */}
+      {/* ── 3. OUR STORY ─────────────────────────────────────────────────── */}
+      <section className="py-20 bg-gradient-to-br from-brand-magenta/8 via-brand-surface to-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+
+            {/* Text — left */}
+            <div className="w-full lg:w-1/2 text-center lg:text-left">
+              <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight tracking-tight">Our <span className="gradient-text">Story</span></h2>
+              <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-10 font-light">
+                At ShaktiPath, we don't just provide charity — we build <span className="gradient-text font-bold">capability</span>. A team of technologists and mentors driven by one urgent mission: empowering girls in underserved communities to reclaim their futures.
+              </p>
+              <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
+                <Link to="/get-involved" className="bg-brand-magenta text-white px-8 py-3.5 rounded-full font-bold text-sm hover:bg-brand-magentaDark transition-colors shadow-lg shadow-brand-magenta/25">
+                  Join Our Mission
+                </Link>
+                <Link to="/impact" className="border-2 border-brand-magenta text-brand-magenta px-8 py-3.5 rounded-full font-bold text-sm hover:bg-brand-magenta hover:text-white transition-colors">
+                  See Our Impact
+                </Link>
+              </div>
+            </div>
+
+            {/* Video — right */}
+            <div className="w-full lg:w-1/2">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-brand-magenta/20 aspect-video">
+                <iframe
+                  src="https://www.youtube.com/embed/kPd62--P8-w?rel=0&modestbranding=1"
+                  title="Elina Bansal — ShaktiPath Initiative"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
+              </div>
+              <p className="text-center text-xs text-gray-400 mt-3 font-medium">Elina Bansal, Founder — explaining the ShaktiPath mission</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* ── 4. VALUES ────────────────────────────────────────────────────── */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
           <div className="text-center mb-12">
@@ -184,7 +181,7 @@ const About: React.FC = () => {
         </div>
       </section>
 
-      {/* Mission — image + text */}
+      {/* ── 5. MISSION ───────────────────────────────────────────────────── */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
           <div className="flex flex-col md:flex-row items-center gap-12">
@@ -211,7 +208,7 @@ const About: React.FC = () => {
         </div>
       </section>
 
-      {/* CTA */}
+      {/* ── 6. CTA ───────────────────────────────────────────────────────── */}
       <section className="py-16 bg-gradient-to-br from-brand-magenta to-brand-magentaDark text-white text-center">
         <div className="container mx-auto px-4 max-w-3xl">
           <h2 className="text-3xl font-bold mb-4 text-white">Be Part of the Story</h2>
