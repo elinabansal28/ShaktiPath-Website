@@ -48,7 +48,7 @@ const WhyShaktiPath: React.FC = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
            <div className="max-w-6xl mx-auto text-center">
                <h2 className="text-2xl md:text-4xl font-extrabold mb-10 leading-tight text-gray-900 pb-2 max-w-5xl mx-auto">
-                  Today, 96% of girls in India attend school. What an amazing achievement! <span className="underline decoration-wavy decoration-brand-magentaDark">But is this enough?</span>
+                  Today, 96% of girls in India attend school. What an amazing achievement! <span className="text-brand-magentaDark font-semibold">But is this enough?</span>
                </h2>
 
                <p className="text-2xl font-bold text-brand-magentaDark mb-16 leading-relaxed max-w-4xl mx-auto">

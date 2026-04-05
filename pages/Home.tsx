@@ -32,8 +32,9 @@ const Home: React.FC = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-black/45 via-black/15 to-transparent" />
 
             <div className="absolute inset-0 container mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center">
-              <div className="max-w-2xl space-y-6">
-                <h1 className="text-4xl lg:text-[3.5rem] font-extrabold leading-[1.08] tracking-tight text-white drop-shadow-md" style={{fontFamily: "'Playfair Display', serif"}}>
+              <div className="max-w-2xl">
+              <div className="space-y-6 bg-black/30 backdrop-blur-sm rounded-2xl px-6 py-8 inline-block w-full">
+                <h1 className="text-4xl lg:text-[3.5rem] font-extrabold leading-[1.08] tracking-tight text-white drop-shadow-md" >
                   {slide.titleWhite}
                   <span className="text-brand-yellow">{slide.titleAccent}</span>
                 </h1>
@@ -54,6 +55,7 @@ const Home: React.FC = () => {
                     See Our Impact
                   </Link>
                 </div>
+              </div>
               </div>
             </div>
           </div>
@@ -132,7 +134,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* ── APP SECTION ─────────────────────────────────────────────────────── */}
-      <section className="py-24 bg-[#1a1a2e] text-white overflow-hidden relative">
+      <section className="py-20 bg-[#1a1a2e] text-white overflow-hidden relative">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <div className="lg:w-1/2 space-y-6">
