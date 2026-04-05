@@ -110,6 +110,54 @@ const About: React.FC = () => {
               <p className="text-gray-700 leading-relaxed text-lg">
                 Meet Elina Bansal, a dynamic student based in Singapore whose roots and heart remain deeply tied to India. Bridging the gap between two cultures, Elina is a frequent traveler to her home country, a connection that fuels her commitment to social impact. While she thrives on the rigor of solving complex mathematical problems and exploring the depths of literature, her true fulfillment comes from empowering others. A published author on Amazon and a dedicated mentor, Elina has spent significant time teaching AI and Mathematics to younger peers. Now, she is channeling that enthusiasm into ShaktiPath, where she is dedicated to uplifting and creating life-changing opportunities for underrepresented girls across India.
               </p>
+
+              {/* Award badge */}
+              <div className="mt-6 inline-flex items-center gap-3 bg-amber-50 border border-amber-200 rounded-2xl px-5 py-3">
+                <span className="text-2xl">🥈</span>
+                <div>
+                  <p className="text-xs font-bold text-amber-700 uppercase tracking-wider">Silver Award</p>
+                  <p className="text-sm font-semibold text-gray-800">Global Youth Conference 2026 — AI &amp; Future of Work</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* GYC Recognition — certificate + links */}
+          <div className="mt-16 max-w-5xl mx-auto">
+            <div className="bg-white rounded-3xl border border-brand-magenta/10 shadow-sm overflow-hidden">
+              <div className="flex flex-col md:flex-row items-center gap-0">
+
+                {/* Certificate image */}
+                <div className="w-full md:w-2/5 bg-[#fdf4f7] flex items-center justify-center p-8">
+                  <div className="rounded-2xl overflow-hidden shadow-lg border border-amber-100 w-full max-w-xs">
+                    <img
+                      src="/gyc-certificate.png"
+                      alt="GYC 2026 Silver Award Certificate — Elina Bansal, ShaktiPath"
+                      className="w-full h-auto object-contain"
+                    />
+                  </div>
+                </div>
+
+                {/* Text */}
+                <div className="w-full md:w-3/5 p-8 md:p-10">
+                  <p className="text-xs font-bold uppercase tracking-widest text-brand-magenta mb-2">Recognition</p>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Named Top 16 Finalist at <span className="gradient-text">GYC 2026</span></h3>
+                  <p className="text-gray-600 leading-relaxed mb-6">
+                    Elina was selected as a Top 16 Finalist at the Global Youth Conference 2026 and awarded the <strong>Silver Award</strong> in the <em>AI &amp; Future of Work</em> track — recognising ShaktiPath's impact on digital empowerment for underserved communities in India.
+                  </p>
+                  <div className="flex flex-wrap gap-3">
+                    <a href="https://theglobalyouth.org/gyc-2026-finalists" target="_blank" rel="noopener noreferrer"
+                       className="inline-flex items-center gap-2 bg-brand-magenta text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-brand-magentaDark transition-colors shadow-md">
+                      See Finalists Page
+                    </a>
+                    <a href="https://theglobalyouth.org/home" target="_blank" rel="noopener noreferrer"
+                       className="inline-flex items-center gap-2 border-2 border-brand-magenta text-brand-magenta px-6 py-2.5 rounded-full text-sm font-bold hover:bg-brand-magenta hover:text-white transition-colors">
+                      GYC Website
+                    </a>
+                  </div>
+                </div>
+
+              </div>
             </div>
           </div>
         </div>

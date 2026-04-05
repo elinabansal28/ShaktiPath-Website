@@ -82,10 +82,12 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 
       {/* Top Banner — gradient strip */}
       <div className="bg-gradient-to-r from-brand-navy via-brand-magentaDark to-brand-navy text-white text-sm py-2.5 px-4 text-center">
-        <span className="opacity-90">Empowering 10,000+ girls in Maharashtra. </span>
-        <Link to="/get-involved" className="font-bold underline underline-offset-2 hover:text-brand-magentaLight ml-1 transition-colors">
-          Join the movement →
-        </Link>
+        <span className="opacity-90">🥈 ShaktiPath wins </span>
+        <span className="font-bold">Silver Award</span>
+        <span className="opacity-90"> at Global Youth Conference 2026 — AI &amp; Future of Work. </span>
+        <a href="https://theglobalyouth.org/gyc-2026-finalists" target="_blank" rel="noopener noreferrer" className="font-bold underline underline-offset-2 hover:text-brand-magentaLight ml-1 transition-colors">
+          See the announcement →
+        </a>
       </div>
 
       {/* Navigation */}

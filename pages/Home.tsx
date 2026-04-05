@@ -51,6 +51,10 @@ const Home: React.FC = () => {
 
             <div className="absolute inset-0 container mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center">
               <div className="max-w-2xl space-y-6">
+                <a href="https://theglobalyouth.org/gyc-2026-finalists" target="_blank" rel="noopener noreferrer"
+                   className="inline-flex items-center gap-2 bg-white/15 hover:bg-white/25 backdrop-blur border border-white/30 text-white text-xs font-bold px-4 py-2 rounded-full transition-all">
+                  🥈 Silver Award — Global Youth Conference 2026
+                </a>
                 <h1 className="text-4xl lg:text-[3.5rem] font-extrabold leading-[1.08] tracking-tight text-white drop-shadow-md" style={{fontFamily: "'Playfair Display', serif"}}>
                   {slide.titleWhite}
                   <span className="text-brand-yellow">{slide.titleAccent}</span>
